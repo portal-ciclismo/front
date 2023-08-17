@@ -1,6 +1,6 @@
-# Front
+# Front</br>
 
-# Para desenvolver e executar a aplicação, você precisa dos seguintes requisitos:
+</br># Para desenvolver e executar a aplicação, você precisa dos seguintes requisitos:</br>
 
 Servidor: Node.js e npm (Node Package Manager)<br/>
 Editor de Código: VsCode (Editar o código)<br/>
