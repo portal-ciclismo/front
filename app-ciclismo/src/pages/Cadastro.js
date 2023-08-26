@@ -1,5 +1,7 @@
 import '../pages-css/Cadastro.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Cadastro() {
   const [formData, setFormData] = useState({
@@ -67,6 +69,14 @@ function Cadastro() {
         </div>
         {!passwordMatch && <p>As senhas não coincidem.</p>}
         <button type="submit">Cadastrar</button>
+
+        <div className="text-center">
+          <span className="txt1">Já possui conta? </span>
+          <Link className="txt2" to="/login">
+            Faça o login
+          </Link>
+        </div>
+
       </form>
     </div>
   );
