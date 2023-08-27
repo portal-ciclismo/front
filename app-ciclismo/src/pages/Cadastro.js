@@ -35,8 +35,8 @@ function Cadastro() {
   return (
     <div className="container-cadastro">
       
-      <form className='form' onSubmit={handleSubmit}>
-      <h2>Cadastre-se</h2>
+      <form className='cadastro-form' onSubmit={handleSubmit}>
+      <h1>Fazer cadastro</h1>
         <div>
           <label>Email:</label>
           <input
