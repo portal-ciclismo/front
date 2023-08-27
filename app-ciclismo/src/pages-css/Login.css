@@ -22,14 +22,14 @@
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin: 0 auto; 
+    margin: 150px auto; 
     margin-top: 150px; 
     background-image: url(../assets/Logo_Horizontal/logo_horizontal_branco.png);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 30px 30px;
-    position: relative;
     font-family: "Helvetica Neue", Arial, sans-serif;
+
 }
 
 .login-form h1 {
