@@ -11,6 +11,8 @@ function Cadastro() {
   });
 
   const [passwordMatch, setPasswordMatch] = useState(true);
+  const [cadastroSucesso, setCadastroSucesso] = useState(false);
+  const [messageType, setMessageType] = useState(null);;
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -18,17 +20,20 @@ function Cadastro() {
       ...prevData,
       [name]: value,
     }));
+    setMessageType(null); // Limpar o tipo de mensagem
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (formData.password === formData.confirmPassword) {
-      // Senhas coincidem, você pode enviar os dados do formulário para o servidor aqui
       console.log('Formulário enviado:', formData);
       setPasswordMatch(true);
+      setCadastroSucesso(true);
+      setMessageType('success'); // Definir o tipo de mensagem como sucesso
     } else {
       setPasswordMatch(false);
+      setMessageType('error'); // Definir o tipo de mensagem como erro
     }
   };
 
@@ -67,7 +72,19 @@ function Cadastro() {
             required
           />
         </div>
-        {!passwordMatch && <p>As senhas não coincidem.</p>}
+
+        {messageType === 'error' && (
+        <div className="message-box error-box">
+          <span className="message-center">As senhas não coincidem.</span>
+        </div>
+        )}
+
+        {messageType === 'success' && (
+          <div className="message-box success-box">
+            <span className="message-center">Cadastro realizado com sucesso!!!</span>
+          </div>
+        )}
+
         <button type="submit">Cadastrar</button>
 
         <div className="text-center">
