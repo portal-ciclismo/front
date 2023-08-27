@@ -15,15 +15,18 @@
   --title: #FFFF;
   --background-color-yellow: var(--yellow);
   --background-color-blue: var(--blue);
+  --font-size: 16px;
+  --main-font: 'Helvetica Neue', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: var(--main-font), BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
 }
 
 code {
