@@ -71,3 +71,23 @@
     color: #fff;
 }
 
+.message-box {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Adicione essa linha para afastar do botão */
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-box {
+  background-color: #ffebee;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.success-box {
+  background-color: #e8f5e9;
+  color: #388e3c;
+  border: 1px solid #388e3c;
+}
