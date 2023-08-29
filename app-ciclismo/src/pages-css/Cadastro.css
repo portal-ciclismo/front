@@ -76,3 +76,24 @@ html{
     text-align: center;
     color: var(--text-defaut);
 }
+
+.message-box {
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem; /* Adicione essa linha para afastar do botão */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .error-box {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+  }
+  
+  .success-box {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #388e3c;
+  }
