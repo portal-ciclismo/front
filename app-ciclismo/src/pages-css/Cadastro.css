@@ -19,7 +19,7 @@ html{
 }
 
 .cadastro-form {
-    background-color: #EB6841;
+    background-color: var(--orange);
     padding: 2.5rem; /* 40px / 16px = 2.5rem */
     border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ html{
     width: 100%;
     padding:  0.625rem; /* 10px / 16px = 0.625rem */
     background-color: #CC333F;
-    color: #fff;
+    color: var(--white);
     border: none;
     border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
     cursor: pointer;

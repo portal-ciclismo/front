@@ -17,12 +17,12 @@ html{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #EDC951;
+    background-color: var(--yellow);
     
 }
 
 .login-form {
-    background-color: #00A0B0;
+    background-color: var(--blue);
     padding: 2.5rem; /* 40px / 16px = 2.5rem */
     border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16px = 0.625rem */
@@ -39,7 +39,7 @@ html{
 
 .login-form h1 {
     text-align:center;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
     font-size: 1.5rem; /* 24px / 16px = 1.5rem */
     margin-top: 3.75rem; /* 60px / 16px = 3.75rem */
@@ -49,7 +49,7 @@ html{
     width: 100%;
     padding: 0.625rem; /* 10px / 16px = 0.625rem */;
     margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
-    border: 0.0625rem solid #ccc; /* 1px / 16px = 0.0625rem */
+    border: 0.0625rem solid var(--white); /* 1px / 16px = 0.0625rem */
     border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
 }
     
@@ -61,7 +61,7 @@ html{
     background-color: var(--orange);
     color: var(--white);
     border: none;
-    transition: 0.2s;
+    transition-delay: 0.2s;
     border-radius:  2.5rem; /* 40px / 16px = 2.5rem */
     cursor: pointer;
 }
@@ -73,11 +73,11 @@ html{
 .login-form p {
     margin-top: 1rem;
     text-align: center;
-    color: #fff;
+    color: var(--white);
 }
 
 a {
-    color:#ccc;
+    color: var(--white);
 }
 
 a:hover,
