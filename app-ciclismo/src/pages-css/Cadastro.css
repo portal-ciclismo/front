@@ -68,10 +68,6 @@ html{
     transition-duration: 0.14s;
 }
 
-.cadastro-form label {
-    text-align: center;
-    color: #fff;
-}
 .text-center {
     text-align: center;
     color: var(--text-defaut);
@@ -87,13 +83,19 @@ html{
   }
   
   .error-box {
-    background-color: #ffebee;
-    color: #d32f2f;
-    border: 1px solid #d32f2f;
+    background-color: #d32f2f;
+    color: #ffebee;
+    border: 1px solid #ffebee;
+    padding:  0.625rem;
+    border: none;
+    border-radius: 2.5rem;
   }
   
   .success-box {
-    background-color: #e8f5e9;
-    color: #388e3c;
-    border: 1px solid #388e3c;
+    background-color: #388e3c;
+    color: #e8f5e9;
+    border: 1px solid #e8f5e9;
+    padding:  0.625rem;
+    border: none;
+    border-radius: 2.5rem;
   }

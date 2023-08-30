@@ -43,9 +43,9 @@ function Cadastro() {
       <form className='cadastro-form' onSubmit={handleSubmit}>
       <h1>Fazer cadastro</h1>
         <div>
-          <label>Email:</label>
           <input
             type="email"
+            placeholder='E-mail'
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -53,9 +53,9 @@ function Cadastro() {
           />
         </div>
         <div>
-          <label>Senha:</label>
           <input
             type="password"
+            placeholder='Senha'
             name="password"
             value={formData.password}
             onChange={handleInputChange}
@@ -63,9 +63,9 @@ function Cadastro() {
           />
         </div>
         <div>
-          <label>Confirmar Senha:</label>
           <input
             type="password"
+            placeholder='Confirmar Senha'
             name="confirmPassword"
             value={formData.confirmPassword}
             onChange={handleInputChange}
