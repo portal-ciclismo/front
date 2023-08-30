@@ -1,5 +1,5 @@
 ---
-name: Template Padrão para Issues
+name: Issue template
 about: Use esse template para criar issues mais detalhadas e auxiliar na resolução
   das mesmas.
 title: ''
