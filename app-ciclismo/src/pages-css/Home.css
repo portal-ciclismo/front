@@ -1,3 +1,43 @@
-.text {
-    text-align: center;
-}
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  /* Section 1 */
+  .section1 {
+    background-color: #1e88e5;
+  }
+  /* Section 2 */
+  .section2 {
+    background-color: #43a047;
+  }
+  /* Section 3 */
+  .section3 {
+    background-color: #f4511e;
+  }
+  /* Section 4 */
+  .section4 {
+    background-color: #9c27b0;
+  }
+  /* Section 5 */
+  .section5 {
+    background-color: #ff5722;
+  }
+  /* Section 6 */
+  .section6 {
+    background-color: #795548;
+  }
+  
