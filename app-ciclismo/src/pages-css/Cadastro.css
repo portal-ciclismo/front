@@ -54,7 +54,7 @@ html{
 .cadastro-form button {
     width: 100%;
     padding:  0.625rem; /* 10px / 16px = 0.625rem */
-    background-color: #CC333F;
+    background-color: var(--red);
     color: var(--white);
     border: none;
     border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
