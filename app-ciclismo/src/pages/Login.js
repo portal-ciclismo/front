@@ -1,9 +1,15 @@
 import { useState } from 'react';
-import '../pages-css/Login.css';
 import { Link } from 'react-router-dom';
+
+import api from '../services/api';
+
+import '../pages-css/Login.css';
 import logo_branca from '../assets/Logo_Horizontal/logo_horizontal_branco.png'
 
 function Login() {
+
+    const [ loginStatus, setLoginStatus ] = useState(false);
+    const [ loginDenied, setLoginDenied ] = useState(false);
 
     const [loginState, setLoginState] = useState({
         email: '',
@@ -19,9 +25,20 @@ function Login() {
         console.log(loginState)
     }
 
+    // verificar o nome do endpoint do login!
+    const sendLogin = data => {
+        api.post('/endpoint', data)
+        .then(() => {
+            setLoginStatus(true);
+        })
+        .catch(() => {
+            setLoginDenied(true);
+        });
+    };
+
     return (
         <div className='container-login'>
-            <form className='login-form' onSubmit={handleLoginForm}>             
+            <form className='login-form' onSubmit={sendLogin}>             
                 <h1>Fazer Login</h1>
                 <input type='email' placeholder='E-mail' required value={loginState.email} onChange={(e) => handleOnChangeLogin(e, 'email')}/>
                 <input type='password' placeholder='Senha' required value={loginState.password} onChange={(e) => handleOnChangeLogin(e, 'password')} />

@@ -1,6 +1,9 @@
-import '../pages-css/Cadastro.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import '../pages-css/Cadastro.css';
+
+import api from '../services/api';
 
 
 function Cadastro() {
@@ -37,10 +40,18 @@ function Cadastro() {
     }
   };
 
+  const addUser = data => {
+    if (passwordMatch == true){
+      api.post('/endpoint', data);
+    } else {
+      setCadastroSucesso(false);
+    }
+  }
+
   return (
     <div className="container-cadastro">
       
-      <form className='cadastro-form' onSubmit={handleSubmit}>
+      <form className='cadastro-form' onSubmit={addUser}>
       <h1>Fazer cadastro</h1>
         <div>
           <input
