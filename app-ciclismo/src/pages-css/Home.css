@@ -34,8 +34,35 @@
   }
   /* Section 5 */
   .section5 {
-    background-color: #ff5722;
+    background-color: var(--yellow);
+    background-image: url('../assets/Estrelas/Estrela_grande_branca.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -25rem -38rem;
+
+    text-align: center;
   }
+  .title-section5{
+
+    color: var(--blue);
+    font-size: 3.5rem;
+    line-height: 5rem;
+    letter-spacing: -0.04em;
+  }
+
+  .container-recomendacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 5rem;
+    margin-top: 2rem;
+  }
+
+
   /* Section 6 */
   .section6 {
     background-color: #795548;
