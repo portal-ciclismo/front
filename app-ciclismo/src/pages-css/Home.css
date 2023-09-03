@@ -20,10 +20,64 @@
   .section1 {
     background-color: #1e88e5;
   }
+
   /* Section 2 */
   .section2 {
-    background-color: #43a047;
+    background-color: var(--white);
+    background-image: url('../assets/Estrelas/Estrela_grande_fullcolor.png');
+    background-repeat: no-repeat;
+    background-position: -38% center;
+    background-size: 58rem 58rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
   }
+
+  .titulo{
+    text-align: left;
+    line-height: 0.7;
+    max-width: 650px;
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 20px;
+    height: 30rem;
+    margin-right: 5.5rem;
+    
+  }
+
+  .texto {
+    text-align: left;
+    line-height: 1.1;
+    max-width: 850px;
+    font-size: 2.1rem;
+    color: black;
+    margin-block-end: 10rem;
+    margin-top: 20px;
+  }
+
+  /* Estilizando o botão */
+  .botao {
+    background-color: #007bff; /* Cor de fundo do botão (exemplo: azul) */
+    color: #ffffff; /* Cor do texto do botão (exemplo: branco) */
+    padding: 0.70rem; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Removendo a borda do botão */
+    border-radius: 70px; /* Adicionando cantos arredondados */
+    cursor: pointer; /* Transforma o cursor em uma mão quando hover */
+    width: 17rem;
+    display: block;
+    margin-top: -5rem;
+    align-items: center;
+
+  }
+
+  /* Estilizando o botão quando o cursor está sobre ele (hover) */
+  .botao:hover {
+    background-color: #4697ee; /* Mudar a cor de fundo no hover */
+  }
+
+  
   /* Section 3 */
   .section3 {
     background-color: #f4511e;

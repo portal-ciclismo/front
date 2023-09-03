@@ -7,9 +7,26 @@ const Home = () => {
       <section className="section1">
         {/* Conteúdo da primeira seção */}
       </section>
+
+
       <section className="section2">
+       
         {/* Conteúdo da segunda seção */}
+      
+        <section className="titulo">
+          <h1>Pedalar sozinho nunca mais.</h1>
+        
+          <p className="texto">
+            <strong>Camelo</strong> é sua nova Plataforma de ciclismo.
+            Aqui você encontra ciclistas entusiastas e profissionais
+            em uma comunidade confiável e crescente.</p>
+        
+          <button className='botao'><strong>SAIBA MAIS</strong></button>
+        </section>
+
       </section>
+
+
       <section className="section3">
         {/* Conteúdo da terceira seção */}
       </section>
@@ -30,3 +47,4 @@ const Home = () => {
 };
 
 export default Home;
+
