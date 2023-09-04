@@ -65,6 +65,73 @@
 
   /* Section 6 */
   .section6 {
-    background-color: #795548;
+    background-image: url('../assets/background-imgs/close-up-cyclist-woman-outdors2.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
+
+  .section6-text1 {
+    color: #fff;
+    font-size: 3.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    margin-left: 5rem;
+  }
+
+  .section6-text2 {
+    color: #fff;
+    font-size: 3.5rem;
+    position: absolute;
+    margin-top: 30rem;
+    margin-left: 5rem;
+  }
+
+  .section6-button {
+    margin-top: 44.5rem;
+    margin-left: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: #fff;
+    color: black;
+  }
+
+.footer-img {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  margin-top: 6rem;
+  margin-left: 8rem;
+}
+
+.footer-text1 {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 50%;
+}
+
+.footer-text2 {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 50%;
+  font-size: 0.8rem;
+
+}
+
+.footer-text3 {
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 50%; 
+}
+
+.footer-text2 h1 {
+  font-weight: normal;
+}
+
+.footer-text3 h1 {
+  font-weight: normal;
+}
   
