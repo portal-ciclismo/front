@@ -1,11 +1,13 @@
 import React from 'react';
 import '../pages-css/Home.css';
 import RecomendacaoBox from '../components/RecomendacaoBox';
+import CriarContaButton from '../components/CriarContaButton';
 
 import Aspas from '../assets/Icons/aspas_icon.jpg';
 import Perfil1 from '../assets/perfil_imgs/Rodrigo_perfil.jpg'
 import Perfil2 from '../assets/perfil_imgs/Vinicius_perfil.jpg'
 import Perfil3 from '../assets/perfil_imgs/Gabriel_perfil.jpg'
+import Logo from '../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg'
 
 const Home = () => {
   return (
@@ -48,9 +50,26 @@ const Home = () => {
       
       </section>
       <section className="section6">
-        {/* Conteúdo da sexta seção */}
+        <div className='section6-text1'>
+          <h1>Comunidade,<br/>Esporte,<br/> Lazer.</h1>
+        </div>
+        <div className='section6-text2'>
+          <h2>Tudo isso<br/>e muito mais.</h2>
+        </div>
+        <div className='section6-button'>
+          <CriarContaButton/>
+        </div>
         <footer>
-          {/* Conteúdo do footer */}
+            <img src={Logo} alt='Logo camelo' className='footer-img'/>
+          <div className='footer-text1'>
+            <h1>FALE CONOSCO</h1>
+          </div>
+          <div className='footer-text2'>
+            <h1>Instagram<br/>Twitter<br/>Facebook<br/>LinkedIn</h1>
+          </div>
+          <div className='footer-text3'>
+            <h1>contato@camelo.com</h1>
+          </div>
         </footer>
       </section>
     </div>
