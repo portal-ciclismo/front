@@ -7,26 +7,20 @@ import api from '../services/api';
 
 
 function Cadastro() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: '',
-  });
+  const [ password, setPassword ] = useState('');
+  const [ passwordConfirm, setPasswordConfirm ] = useState('');
+  const [ passwordValidation, setPasswordValidation ] = useState(false);
 
-  const [passwordMatch, setPasswordMatch] = useState(true);
-  const [cadastroSucesso, setCadastroSucesso] = useState(false);
-  const [messageType, setMessageType] = useState(null);;
-
-  const handleInputChange = (event) => {
+  /*const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
     setMessageType(null); // Limpar o tipo de mensagem
-  };
+  };*/
 
-  const handleSubmit = (event) => {
+  /*const handleSubmit = (event) => {
     event.preventDefault();
 
     if (formData.password === formData.confirmPassword) {
@@ -38,13 +32,14 @@ function Cadastro() {
       setPasswordMatch(false);
       setMessageType('error'); // Definir o tipo de mensagem como erro
     }
-  };
+  };*/
 
   const addUser = data => {
-    if (passwordMatch == true){
-      api.post('/endpoint', data);
+    if (password == passwordConfirm){
+      api.post('/auth/new-register', data);
+      // redirecionar o usuário para a página inicial logada ou página de login
     } else {
-      setCadastroSucesso(false);
+      setPasswordValidation(true);
     }
   }
 
@@ -58,8 +53,8 @@ function Cadastro() {
             type="email"
             placeholder='E-mail'
             name="email"
-            value={formData.email}
-            onChange={handleInputChange}
+            //value={formData.email}
+            //onChange={handleInputChange}
             required
           />
         </div>
@@ -68,8 +63,8 @@ function Cadastro() {
             type="password"
             placeholder='Senha'
             name="password"
-            value={formData.password}
-            onChange={handleInputChange}
+            //value={formData.password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
@@ -78,23 +73,25 @@ function Cadastro() {
             type="password"
             placeholder='Confirmar Senha'
             name="confirmPassword"
-            value={formData.confirmPassword}
-            onChange={handleInputChange}
+            //value={formData.confirmPassword}
+            onChange={(e) => setPasswordConfirm(e.target.value)}
             required
           />
         </div>
 
-        {messageType === 'error' && (
+        {/*essageType === 'error' && (
         <div className="message-box error-box">
           <span className="message-center">As senhas não coincidem.</span>
         </div>
-        )}
+        )*/}
 
-        {messageType === 'success' && (
+        {/*messageType === 'success' && (
           <div className="message-box success-box">
             <span className="message-center">Cadastro realizado com sucesso!!!</span>
           </div>
-        )}
+        )*/}
+
+        {passwordValidation && <span className="message-box error-box">As senhas não coincidem.</span>}
 
         <button type="submit">Cadastrar</button>
 

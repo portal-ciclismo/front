@@ -25,11 +25,11 @@ function Login() {
         console.log(loginState)
     }
 
-    // verificar o nome do endpoint do login!
     const sendLogin = data => {
-        api.post('/endpoint', data)
+        api.post('/auth/login', data)
         .then(() => {
             setLoginStatus(true);
+            // guardar o token em localStorage
         })
         .catch(() => {
             setLoginDenied(true);
@@ -40,10 +40,20 @@ function Login() {
         <div className='container-login'>
             <form className='login-form' onSubmit={sendLogin}>             
                 <h1>Fazer Login</h1>
+
                 <input type='email' placeholder='E-mail' required value={loginState.email} onChange={(e) => handleOnChangeLogin(e, 'email')}/>
+
                 <input type='password' placeholder='Senha' required value={loginState.password} onChange={(e) => handleOnChangeLogin(e, 'password')} />
                 <button type='submit'>Login</button> 
+
                 <p>Não tem uma conta? <Link to='/cadastro'>Cadastre-se</Link></p> 
+
+                {
+                    //loginStatus && (redirecionar o usuário pra página inicial logada)
+                }
+                {
+                    //loginDenied && (mensagem do erro correspondente do login)
+                }
             </form>
             
         </div>    
