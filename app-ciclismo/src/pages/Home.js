@@ -8,6 +8,7 @@ import Perfil1 from '../assets/perfil_imgs/Rodrigo_perfil.jpg'
 import Perfil2 from '../assets/perfil_imgs/Vinicius_perfil.jpg'
 import Perfil3 from '../assets/perfil_imgs/Gabriel_perfil.jpg'
 import Logo from '../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg'
+import EstrelaColor from '../assets/Estrelas/Estrela_grande_fullcolor.png';
 
 const Home = () => {
   return (
@@ -15,8 +16,22 @@ const Home = () => {
       <section className="section1">
         {/* Conteúdo da primeira seção */}
       </section>
+      
       <section className="section2">
-        {/* Conteúdo da segunda seção */}
+        <div className='section2-img'><img src={EstrelaColor}/></div>
+
+        <div className='section2-container'>
+
+          <div className='section2-text'>
+            <span>Pedalar sozinho nunca mais.</span>
+            <p><strong>Camelo</strong> é sua nova plataforma de ciclismo.
+              Aqui você encontra ciclistas entusiastas e
+              profissionais em uma comunidade confiável e
+              crescente.</p>
+          </div>
+
+          <button>SAIBA MAIS.</button>
+        </div>
       </section>
       <section className="section3">
         {/* Conteúdo da terceira seção */}
@@ -36,7 +51,7 @@ const Home = () => {
         />
         <RecomendacaoBox
           aspas={Aspas}
-          texto="Tinha medo de pedalar sozinha. Agora saio em grupo com gente maravilhosa que me ajuda muito."
+          texto="Tinha medo de pedalar sozinhao Agora saio em grupo com gente maravilhoso que me ajuda muito."
           imagemPerfil={Perfil2}
           nome="Vinicius, (FilhoDeRodrigo)"
         />
@@ -46,7 +61,7 @@ const Home = () => {
           imagemPerfil={Perfil3}
           nome="Gabriel, (Escrivão)"
         />
-       </div>
+        </div>
       
       </section>
       <section className="section6">
