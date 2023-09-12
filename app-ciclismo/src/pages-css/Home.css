@@ -87,8 +87,11 @@
   }
   /* Section 4 */
   .section4 {
-    background-color: #9c27b0;
+    background-color: var(--orange);
   }
+
+
+
   /* Section 5 */
   .section5 {
     background-color: var(--yellow);
