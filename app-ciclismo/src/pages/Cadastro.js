@@ -1,97 +1,95 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 import '../pages-css/Cadastro.css';
 
 import api from '../services/api';
 
-
 function Cadastro() {
-  const [ password, setPassword ] = useState('');
-  const [ passwordConfirm, setPasswordConfirm ] = useState('');
-  const [ passwordValidation, setPasswordValidation ] = useState(false);
+  const [passwordValidation, setPasswordValidation] = useState(false);
 
-  /*const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-    setMessageType(null); // Limpar o tipo de mensagem
-  };*/
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
+    password: Yup.string().min(6, 'A senha deve ter pelo menos 6 caracteres').required('A senha é obrigatória'),
+    confirmPassword: Yup.string()
+      .oneOf([Yup.ref('password'), null], 'As senhas não coincidem')
+      .required('A confirmação de senha é obrigatória'),
+  });
 
-  /*const handleSubmit = (event) => {
-    event.preventDefault();
-
-    if (formData.password === formData.confirmPassword) {
-      console.log('Formulário enviado:', formData);
-      setPasswordMatch(true);
-      setCadastroSucesso(true);
-      setMessageType('success'); // Definir o tipo de mensagem como sucesso
-    } else {
-      setPasswordMatch(false);
-      setMessageType('error'); // Definir o tipo de mensagem como erro
-    }
-  };*/
-
-  const addUser = data => {
-    if (password == passwordConfirm){
-      api.post('/auth/new-register', data);
-      // redirecionar o usuário para a página inicial logada ou página de login
-    } else {
-      setPasswordValidation(true);
-    }
-  }
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      password: '',
+      confirmPassword: '',
+    },
+    validationSchema,
+    onSubmit: (values) => {
+      if (values.password === values.confirmPassword) {
+        api.post('/auth/new-register', values)
+          .then(() => {
+            // redirecionar o usuário para a página inicial logada ou página de login
+          })
+          .catch((error) => {
+            console.error('Erro ao cadastrar usuário:', error);
+          });
+      } else {
+        setPasswordValidation(true);
+      }
+    },
+  });
 
   return (
     <div className="container-cadastro">
-      
-      <form className='cadastro-form' onSubmit={addUser}>
-      <h1>Fazer cadastro</h1>
+      <form className='cadastro-form' onSubmit={formik.handleSubmit}>
+        <h1>Fazer cadastro</h1>
         <div>
           <input
             type="email"
             placeholder='E-mail'
             name="email"
-            //value={formData.email}
-            //onChange={handleInputChange}
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             required
           />
+          {formik.touched.email && formik.errors.email && (
+            <div className="error-box">{formik.errors.email}</div>
+          )}
         </div>
         <div>
           <input
             type="password"
             placeholder='Senha'
             name="password"
-            //value={formData.password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={formik.values.password}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             required
           />
+          {formik.touched.password && formik.errors.password && (
+            <div className="error-box">{formik.errors.password}</div>
+          )}
         </div>
         <div>
           <input
             type="password"
             placeholder='Confirmar Senha'
             name="confirmPassword"
-            //value={formData.confirmPassword}
-            onChange={(e) => setPasswordConfirm(e.target.value)}
+            value={formik.values.confirmPassword}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             required
           />
+          {formik.touched.confirmPassword && formik.errors.confirmPassword && (
+            <div className="error-box">{formik.errors.confirmPassword}</div>
+          )}
         </div>
 
-        {/*essageType === 'error' && (
-        <div className="message-box error-box">
-          <span className="message-center">As senhas não coincidem.</span>
-        </div>
-        )*/}
-
-        {/*messageType === 'success' && (
-          <div className="message-box success-box">
-            <span className="message-center">Cadastro realizado com sucesso!!!</span>
-          </div>
-        )*/}
-
-        {passwordValidation && <span className="message-box error-box">As senhas não coincidem.</span>}
+        {passwordValidation && (
+          <div className="error-box">As senhas não coincidem.</div>
+        )}
 
         <button type="submit">Cadastrar</button>
 
@@ -101,7 +99,6 @@ function Cadastro() {
             Faça o login
           </Link>
         </div>
-
       </form>
     </div>
   );

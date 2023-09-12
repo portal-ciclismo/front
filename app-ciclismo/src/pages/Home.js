@@ -9,6 +9,8 @@ import Perfil2 from '../assets/perfil_imgs/Vinicius_perfil.jpg'
 import Perfil3 from '../assets/perfil_imgs/Gabriel_perfil.jpg'
 import Logo from '../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg'
 import EstrelaColor from '../assets/Estrelas/Estrela_grande_fullcolor.png';
+import LogoCamelo from '../assets/Camelo/camelo_branco.png'
+import CoupleBike from '../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg'
 
 const Home = () => {
   return (
