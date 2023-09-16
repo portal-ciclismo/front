@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
   }
   
   .section1,
@@ -126,9 +129,59 @@
   /* Section 4 */
   .section4 {
     background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Preenche a altura da tela */
+    box-sizing: border-box; /* Evita que as bordas adicionem à largura/altura */
   }
 
+  .split-left {
+    flex: 1;
+    text-align: center;
+}
 
+.split-right {
+  flex: 1;
+}
+
+.split-right img {
+
+  width: 100%; /* Defina a largura como 100% para ocupar toda a largura do container */
+  height: 100vh; /* Defina a altura como 100vh para ocupar toda a altura da viewport */
+  object-fit: cover; /* Mantém a proporção da imagem e a ajusta ao espaço */
+  margin-top: 0.25rem;
+  
+}
+
+.split-left span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 59px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  display: block; /* Tente adicionar esta linha */
+  margin-left: 14rem;
+  width: 20rem;
+}
+
+.split-left p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: block; /* Tente adicionar esta linha */
+    margin-left: 14rem;
+    width: 20rem;
+}
+
+.section4-button button{
+  background-color: var(--yellow);
+  text-align: left;
+  display: block; 
+  margin-left: 14rem;
+  margin-top: 1rem;
+  width: 12rem;
+}
 
   /* Section 5 */
   .section5 {
