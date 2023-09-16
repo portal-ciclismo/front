@@ -68,7 +68,7 @@ const Home = () => {
             <span>Descubra ou redescubra o prazer de pedalar.</span>
             <p>Cadastre-se agora mesmo! É Grátis!.</p>
             <div className="section4-button">
-              <CriarContaButton />
+              <CriarContaButton  />
             </div>
         </div>
         <div class="split-right">
