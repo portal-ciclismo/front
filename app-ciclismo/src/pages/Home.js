@@ -64,6 +64,17 @@ const Home = () => {
       </section>
       <section className="section4">
         {/* Conteúdo da quarta seção */}
+        <div class="split-left">
+            <span>Descubra ou redescubra o prazer de pedalar.</span>
+            <p>Cadastre-se agora mesmo! É Grátis!.</p>
+            <div className="section4-button">
+              <CriarContaButton  />
+            </div>
+        </div>
+        <div class="split-right">
+            <img src={CoupleBike} alt={'Couple Bike'}/>
+        </div>
+
       </section>
       <section className="section5">
         {/* Conteúdo da quinta seção */}
