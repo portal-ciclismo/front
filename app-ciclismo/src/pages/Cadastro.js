@@ -44,9 +44,11 @@ function Cadastro() {
     <div className="container-cadastro">
       <form className='cadastro-form' onSubmit={formik.handleSubmit}>
         <h1>Fazer cadastro</h1>
-        <div>
+        <div className="form-group">
+          <label htmlFor="email">E-mail</label>
           <input
             type="email"
+            id="email"
             placeholder='E-mail'
             name="email"
             value={formik.values.email}
@@ -55,12 +57,17 @@ function Cadastro() {
             required
           />
           {formik.touched.email && formik.errors.email && (
-            <div className="error-box">{formik.errors.email}</div>
+            <div className="error-box">
+              <span className="error-text">{formik.errors.email}</span>
+              <span className="close-icon" onClick={() => formik.setFieldError('email', '')}>X</span>
+            </div>
           )}
         </div>
-        <div>
+        <div className="form-group">
+          <label htmlFor="password">Senha</label>
           <input
             type="password"
+            id="password"
             placeholder='Senha'
             name="password"
             value={formik.values.password}
@@ -69,12 +76,17 @@ function Cadastro() {
             required
           />
           {formik.touched.password && formik.errors.password && (
-            <div className="error-box">{formik.errors.password}</div>
+            <div className="error-box">
+              <span className="error-text">{formik.errors.password}</span>
+              <span className="close-icon" onClick={() => formik.setFieldError('password', '')}>X</span>
+            </div>
           )}
         </div>
-        <div>
+        <div className="form-group">
+          <label htmlFor="confirmPassword">Confirmar Senha</label>
           <input
             type="password"
+            id="confirmPassword"
             placeholder='Confirmar Senha'
             name="confirmPassword"
             value={formik.values.confirmPassword}
@@ -83,12 +95,18 @@ function Cadastro() {
             required
           />
           {formik.touched.confirmPassword && formik.errors.confirmPassword && (
-            <div className="error-box">{formik.errors.confirmPassword}</div>
+            <div className="error-box">
+              <span className="error-text">{formik.errors.confirmPassword}</span>
+              <span className="close-icon" onClick={() => formik.setFieldError('confirmPassword', '')}>X</span>
+            </div>
           )}
         </div>
 
         {passwordValidation && (
-          <div className="error-box">As senhas não coincidem.</div>
+          <div className="error-box">
+            <span className="error-text">As senhas não coincidem.</span>
+            <span className="close-icon" onClick={() => setPasswordValidation(false)}>X</span>
+          </div>
         )}
 
         <button type="submit">Cadastrar</button>

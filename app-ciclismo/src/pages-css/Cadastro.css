@@ -73,29 +73,44 @@ html{
     color: var(--text-defaut);
 }
 
-.message-box {
-    padding: 0.625rem;
-    border-radius: 0.313rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem; /* Adicione essa linha para afastar do botão */
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .error-box {
-    background-color: #d32f2f;
-    color: #ffebee;
-    border: 1px solid #ffebee;
-    padding:  0.625rem;
-    border: none;
-    border-radius: 2.5rem;
-  }
-  
-  .success-box {
+
+
+.error-box {
+    background-color: #ffeaea;
+    color: red;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    transform: translate(-7%, -50%);
+    top: 0; 
+}
+
+.close-icon {
+    cursor: pointer;
+    color: red; /* Cor do ícone de fechar */
+    margin-left: 1rem;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.close-icon:hover {
+    color: white; 
+    background-color: red;
+    transition-duration: 0.14s;
+}
+
+.success-box {
     background-color: #388e3c;
     color: #e8f5e9;
     border: 1px solid #e8f5e9;
     padding:  0.625rem;
     border: none;
     border-radius: 2.5rem;
-  }
+}
