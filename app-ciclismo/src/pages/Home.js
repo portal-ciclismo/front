@@ -16,12 +16,24 @@ import Logo from '../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg'
 import EstrelaColor from '../assets/Estrelas/Estrela_grande_fullcolor.png';
 import LogoCamelo from '../assets/Camelo/camelo_branco.png'
 import CoupleBike from '../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg'
+import videoHome from '../assets/videos/Closeup_of_Bike_Chain_loop.mp4';
+
 
 const Home = () => {
   return (
     <div className="home-container">
       <section className="section1">
-        {/* Conteúdo da primeira seção */}
+        <div>
+        <video className='video' src={videoHome} autoPlay loop muted />
+        <h1>Vamos pedalar juntos? </h1>
+        </div>
+        <div className="content"></div>
+        
+
+        <div className='button'>
+          <button>LOGIN</button>
+        </div>
+
       </section>
 
       <section className="section2">
