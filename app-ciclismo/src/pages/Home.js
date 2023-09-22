@@ -111,7 +111,8 @@ const Home = () => {
         <div className='section6-button'>
           <CriarContaButton />
         </div>
-        <footer>
+      </section>
+      <footer>
           <img src={Logo} alt='Logo camelo' className='footer-img' />
           <div className='footer-text1'>
             <h1>FALE CONOSCO</h1>
@@ -123,7 +124,6 @@ const Home = () => {
             <h1>contato@camelo.com</h1>
           </div>
         </footer>
-      </section>
     </div>
   );
 };
