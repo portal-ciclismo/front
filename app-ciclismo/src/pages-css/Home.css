@@ -221,6 +221,8 @@
     background-image: url('../assets/background-imgs/close-up-cyclist-woman-outdors2.png');
     background-repeat: no-repeat;
     background-size: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
   }
 
   .section6-text1 {
@@ -297,8 +299,24 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/* section */
+  .section6-text1{
 
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .section6-text2{
+    font-size: 1rem;
+    margin-top: 7.5rem;
+    margin-left: 2rem;
+  }
+
+  .section6-button{
+    margin-top: 12rem;
+    margin-left: 2rem;
+    
+  
+  }
 
 }
 
@@ -310,16 +328,44 @@
 /* section 4*/
 /* section 5*/
 /* section 6*/
+.section6-text1{
+
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.section6-text2{
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+.section6-button{
+  margin-top: 17rem;
+  margin-left: 2rem;
+  
+
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/* section 1*/
-/* section 2*/
-/* section 3*/
-/* section 4*/
-/* section 5*/
-/* section 6*/
+  .section6-text1{
+
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .section6-text2{
+    font-size: 1.8rem;
+    margin-top: 12.5rem;
+    margin-left: 2rem;
+  }
+  
+  .section6-button{
+    margin-top: 20rem;
+    margin-left: 2rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -330,6 +376,22 @@
 /* section 4*/
 /* section 5*/
 /* section 6*/
+.section6-text1{
+
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.section6-text2{
+  font-size: 2rem;
+  margin-top: 13.5rem;
+  margin-left: 2rem;
+}
+
+.section6-button{
+  margin-top: 23rem;
+  margin-left: 2rem;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -340,4 +402,20 @@
 /* section 4*/
 /* section 5*/
 /* section 6*/
+.section6-text1{
+
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.section6-text2{
+  font-size: 2rem;
+  margin-top: 13.5rem;
+  margin-left: 2rem;
+}
+
+.section6-button{
+  margin-top: 25rem;
+  margin-left: 2rem;
+}
 }
