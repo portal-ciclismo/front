@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 const CriarContaButton = () => {
     return (
-    <button><Link to='../cadastro' style={{ textDecoration: 'none' }}>CRIAR UMA CONTA</Link></button>
+        <Link to='../cadastro' style={{textDecoration: 'none'}}>
+            <button>CRIAR UMA CONTA</button>
+        </Link>
     )
 }
 export default CriarContaButton;
