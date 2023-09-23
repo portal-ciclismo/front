@@ -190,17 +190,20 @@
     background-image: url('../assets/Estrelas/Estrela_grande_branca.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -25rem -38rem;
+    background-position: calc(-25rem - 10vw) calc(-38rem - 10vh);
     text-align: center;
-  }
 
-  .title-section5{
+  }  
+
+  .title-section5 {
     color: var(--blue);
     font-size: 3.5rem;
     line-height: 5rem;
     letter-spacing: -0.04em;
     font-family: Helvetica, sans-serif;
-  }
+    position: relative;
+    top: 3rem; /* Ajuste o valor conforme necessário */
+  }  
 
   .container-recomendacao{
     display: flex;
@@ -328,6 +331,17 @@
   margin-top: 1rem; 
 }
 
+/* section 5 */
+.section5 {
+  background-image: none;
+  height: 100%;
+}  
+
+.title-section5 {
+  top: 1rem; /* Ajuste o valor conforme necessário */
+}  
+
+
 /* section 6 */
 .section6-text1{
 
@@ -388,6 +402,15 @@
 /* section 3*/
 /* section 4*/
 /* section 5*/
+.section5 {
+  background-position: calc(-15rem - 10vw) calc(-20rem - 10vh);
+  height: 100%;
+}  
+
+.title-section5 {
+  top: 1rem; /* Ajuste o valor conforme necessário */
+}  
+
 /* section 6*/
 .section6-text1{
 
@@ -433,6 +456,17 @@
   height: auto; 
   margin-top: 5%; 
 }
+
+/* section 5 */
+.title-section5 {
+  top: 2rem; /* Ajuste o valor conforme necessário */
+}  
+
+.section5 {
+  background-position: calc(-15rem - 10vw) calc(-20rem - 10vh);
+  height: 100%;
+}  
+
 
 /* section 6 */
 .section6-text1{
@@ -542,6 +576,14 @@
 /* section 3*/
 /* section 4*/
 /* section 5*/
+.container-recomendacao{
+  margin-top: 5rem;
+
+}
+.section5 {
+  background-position: calc(-25rem - 10vw) calc(-36rem - 10vh);
+}  
+
 /* section 6*/
 .section6-text1{
 
