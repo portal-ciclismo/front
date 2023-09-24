@@ -356,8 +356,8 @@
 }
 
 /* section 4 */
-.rotated-image {
-display: none;
+.image-container {
+  margin-right: -60%;
 }
 
 /* section 5 */
@@ -430,8 +430,8 @@ display: none;
 
 /* section 3*/
 /* section 4*/
-.rotated-image {
-display: none;
+.image-container {
+  margin-right: -60%;
 }
 /* section 5*/
 .section5 {
@@ -490,9 +490,10 @@ display: none;
 }
 
 /* section 4 */
-.rotated-image {
-display: none;
+.image-container {
+  margin-right: -60%;
 }
+
 /* section 5 */
 .title-section5 {
   top: 2rem; /* Ajuste o valor conforme necessário */
@@ -557,7 +558,7 @@ display: none;
 /* section 3*/
 /* section 4*/
 .image-container {
-  margin-right: -67%;
+  margin-right: -60%;
 }
 /* section 5*/
 /* section 6*/
@@ -645,4 +646,38 @@ display: none;
 }
 }
 
+/* Aparelhos movel especificos */
+@media screen and (width: 820px) and (height: 1180px) {
+  /* ipad */
+  .image-container {
+    margin-right: -100%;
+  }
+}
 
+@media screen and (width: 768px) and (height: 1024px) {
+  /* ipad */
+  .image-container {
+    margin-right: -87%;
+  }
+}
+
+@media screen and (width: 912px) and (height: 1368px) {
+  /* ipad */
+  .image-container {
+    margin-right: -115%;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+  /* ipad */
+  .image-container {
+    margin-right: -50%;
+  }
+}
+
+@media screen and (width: 375px) and (height: 1200px) {
+  /* ipad */
+  .rotated-image {
+    display: none;
+    }
+}
