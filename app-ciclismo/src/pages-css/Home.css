@@ -96,6 +96,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 4;
   }
   .container-categorias{
     width: 100%;
@@ -133,17 +134,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh; /* Preenche a altura da tela */
-    box-sizing: border-box; /* Evita que as bordas adicionem à largura/altura */
+    z-index: 2;
   }
-
-  .split-left {
-    flex: 1;
-    text-align: center;
-}
-
+ 
 .split-right {
   flex: 1;
+  z-index: 3;
 }
 
 .split-right img {
@@ -152,7 +148,43 @@
   height: 100vh; /* Defina a altura como 100vh para ocupar toda a altura da viewport */
   object-fit: cover; /* Mantém a proporção da imagem e a ajusta ao espaço */
   margin-top: 0.25rem;
+}
+
+.split-left {
+  display: flex;
+  align-items: center;
+  position: relative; /* Adicione position: relative para criar um contexto de posicionamento para a imagem */
   
+}
+
+.text-container {
+  flex: 1;
+  transform: translateX(-20%)
+}
+
+.image-container {
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  margin-right: -67%;
+}
+
+.rotated-image {
+  transform: rotate(-90deg);
+  max-width: 110vh;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.3;
+  user-select: none;
+}
+
+.split-left p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  display: block;
+  margin-left: 14rem;
+  width: 20rem;
 }
 
 .split-left span {
@@ -161,18 +193,9 @@
   line-height: 59px;
   letter-spacing: -0.04em;
   text-align: left;
-  display: block; /* Tente adicionar esta linha */
+  display: block; 
   margin-left: 14rem;
   width: 20rem;
-}
-
-.split-left p {
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: left;
-    display: block; /* Tente adicionar esta linha */
-    margin-left: 14rem;
-    width: 20rem;
 }
 
 .section4-button button{
@@ -192,6 +215,7 @@
     background-size: cover;
     background-position: calc(-25rem - 10vw) calc(-38rem - 10vh);
     text-align: center;
+    z-index: 4;
 
   }  
 
@@ -331,6 +355,11 @@
   margin-top: 1rem; 
 }
 
+/* section 4 */
+.image-container {
+  margin-right: -60%;
+}
+
 /* section 5 */
 .section5 {
   background-image: none;
@@ -401,6 +430,9 @@
 
 /* section 3*/
 /* section 4*/
+.image-container {
+  margin-right: -60%;
+}
 /* section 5*/
 .section5 {
   background-position: calc(-15rem - 10vw) calc(-20rem - 10vh);
@@ -455,6 +487,11 @@
   width: 40%; 
   height: auto; 
   margin-top: 5%; 
+}
+
+/* section 4 */
+.image-container {
+  margin-right: -60%;
 }
 
 /* section 5 */
@@ -575,6 +612,9 @@
   }
 /* section 3*/
 /* section 4*/
+.image-container {
+  margin-right: -67%;
+}
 /* section 5*/
 .container-recomendacao{
   margin-top: 5rem;

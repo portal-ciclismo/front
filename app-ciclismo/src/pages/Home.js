@@ -64,15 +64,22 @@ const Home = () => {
       </section>
       <section className="section4">
         {/* Conteúdo da quarta seção */}
-        <div class="split-left">
+        <div className="split-left">
+          <div className="text-container">
             <span>Descubra ou redescubra o prazer de pedalar.</span>
             <p>Cadastre-se agora mesmo! É Grátis!.</p>
             <div className="section4-button">
-              <CriarContaButton  />
+                <CriarContaButton />
             </div>
+          </div>
+          <div className="image-container">
+            <img src={LogoCamelo} alt="logoCamelo" className="rotated-image" />
+          </div>
         </div>
+
+
         <div class="split-right">
-            <img src={CoupleBike} alt={'Couple Bike'}/>
+          <img src={CoupleBike} alt={'Couple Bike'} />
         </div>
 
       </section>
@@ -113,17 +120,17 @@ const Home = () => {
         </div>
       </section>
       <footer>
-          <img src={Logo} alt='Logo camelo' className='footer-img' />
-          <div className='footer-text1'>
-            <h1>FALE CONOSCO</h1>
-          </div>
-          <div className='footer-text2'>
-            <h1>Instagram<br />Twitter<br />Facebook<br />LinkedIn</h1>
-          </div>
-          <div className='footer-text3'>
-            <h1>contato@camelo.com</h1>
-          </div>
-        </footer>
+        <img src={Logo} alt='Logo camelo' className='footer-img' />
+        <div className='footer-text1'>
+          <h1>FALE CONOSCO</h1>
+        </div>
+        <div className='footer-text2'>
+          <h1>Instagram<br />Twitter<br />Facebook<br />LinkedIn</h1>
+        </div>
+        <div className='footer-text3'>
+          <h1>contato@camelo.com</h1>
+        </div>
+      </footer>
     </div>
   );
 };
