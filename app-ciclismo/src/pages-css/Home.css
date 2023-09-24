@@ -668,12 +668,21 @@
   }
 }
 
-@media screen and (width: 1024px) and (height: 600px) {
+@media screen and (width: 810px) and (height: 1080px) {
   /* ipad */
   .image-container {
-    margin-right: -50%;
+    margin-right: -91%;
   }
 }
+
+@media screen and (width: 800px) and (height: 1280px) {
+  /* ipad */
+  .image-container {
+    margin-right: -110%;
+  }
+}
+
+
 
 @media screen and (width: 375px) and (height: 1200px) {
   /* ipad */
