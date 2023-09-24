@@ -165,7 +165,7 @@
 .image-container {
   position: absolute;
   right: 0;
-  z-index: 4;
+  z-index: 2;
   margin-right: -67%;
 }
 
@@ -557,6 +557,9 @@
 }
 /* section 3*/
 /* section 4*/
+.image-container {
+  margin-right: -67%;
+}
 /* section 5*/
 /* section 6*/
 .section6-text1{
@@ -641,4 +644,11 @@
   margin-top: 25rem;
   margin-left: 2rem;
 }
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+  /* Seu código CSS específico para essa tela aqui */
+  .image-container {
+    margin-right: -100%;
+  }
 }
