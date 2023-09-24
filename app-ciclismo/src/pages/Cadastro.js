@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
@@ -9,6 +9,8 @@ import api from '../services/api';
 
 function Cadastro() {
   const [passwordValidation, setPasswordValidation] = useState(false);
+
+  const navigate = useNavigate();
 
   const validationSchema = Yup.object().shape({
     email: Yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
@@ -29,7 +31,7 @@ function Cadastro() {
       if (values.password === values.confirmPassword) {
         api.post('/auth/new-register', values)
           .then(() => {
-            // redirecionar o usuário para a página inicial logada ou página de login
+            navigate('/home');
           })
           .catch((error) => {
             console.error('Erro ao cadastrar usuário:', error);

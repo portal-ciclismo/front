@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import api from "../services/api";
 
@@ -9,6 +9,8 @@ import logo_branca from "../assets/Logo_Horizontal/logo_horizontal_branco.png";
 function Login() {
   const [loginStatus, setLoginStatus] = useState(false);
   const [loginDenied, setLoginDenied] = useState(false);
+
+  const navigate = useNavigate();
 
   const [loginState, setLoginState] = useState({
     email: "",
@@ -62,11 +64,9 @@ function Login() {
           Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
         </p>
 
+        { loginStatus && navigate('/home') /*criar página inicial do usuário logado!*/ }
         {
-          //loginStatus && (redirecionar o usuário pra página inicial logada)
-        }
-        {
-          //loginDenied && (mensagem do erro correspondente do login)
+          //loginDenied && criar componente da mensagem de erro no login!
         }
       </form>
     </div>
