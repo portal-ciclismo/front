@@ -1,83 +1,78 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 16px; /* tamanho de base para calcular rem */
-
+html {
+  font-size: 16px; /* tamanho de base para calcular rem */
 }
 
 .container-login {
-    background-image: url(../assets/Estrelas/Estrela_grande_branca.png);
-    background-size: 93.75rem; /* 1500px / 16px = 93.75rem */
-    background-repeat: no-repeat;
-    background-position: -43.75rem -12.5rem; /* -700px / 16px = -43.75rem, -200px / 16px = -12.5rem */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--yellow);
-    
+  background-image: url(../assets/Estrelas/Estrela_grande_branca.png);
+  background-size: 93.75rem; /* 1500px / 16px = 93.75rem */
+  background-repeat: no-repeat;
+  background-position: -43.75rem -12.5rem; /* -700px / 16px = -43.75rem, -200px / 16px = -12.5rem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--yellow);
 }
 
 .login-form {
-    background-color: var(--blue);
-    padding: 2.5rem; /* 40px / 16px = 2.5rem */
-    border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16px = 0.625rem */
-    width: 18.75rem; /* 300px / 16px = 18.75rem */
-    margin: 9.375rem auto; /* 150px / 16px = 9.375rem */ 
-    margin-top: 9.375rem; /* 150px / 16px = 9.375rem */
-    background-image: url(../assets/Logo_Horizontal/logo_horizontal_branco.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position:  1.875rem 1.875rem; /* 30px / 16px = 1.875rem */
-    font-family: "Helvetica Neue", Arial, sans-serif;
-
+  background-color: var(--blue);
+  padding: 2.5rem; /* 40px / 16px = 2.5rem */
+  border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16px = 0.625rem */
+  width: 18.75rem; /* 300px / 16px = 18.75rem */
+  margin: 9.375rem auto; /* 150px / 16px = 9.375rem */
+  margin-top: 9.375rem; /* 150px / 16px = 9.375rem */
+  background-image: url(../assets/Logo_Horizontal/logo_horizontal_branco.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 1.875rem 1.875rem; /* 30px / 16px = 1.875rem */
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .login-form h1 {
-    text-align:center;
-    color: var(--white);
-    margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
-    font-size: 1.5rem; /* 24px / 16px = 1.5rem */
-    margin-top: 3.75rem; /* 60px / 16px = 3.75rem */
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+  margin-top: 3.75rem; /* 60px / 16px = 3.75rem */
 }
 
 .login-form input {
-    width: 100%;
-    padding: 0.625rem; /* 10px / 16px = 0.625rem */;
-    margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
-    border: 0.0625rem solid var(--white); /* 1px / 16px = 0.0625rem */
-    border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
+  width: 100%;
+  padding: 0.625rem; /* 10px / 16px = 0.625rem */
+  margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
+  border: 0.0625rem solid var(--white); /* 1px / 16px = 0.0625rem */
+  border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
 }
-    
- 
 
 .login-form button {
-    width: 100%;
-    padding: 0.625rem; /* 10px / 16px = 0.625rem */
-    background-color: var(--orange);
-    color: var(--white);
-    border: none;
-    transition-delay: 0.2s;
-    border-radius:  2.5rem; /* 40px / 16px = 2.5rem */
-    cursor: pointer;
+  width: 100%;
+  padding: 0.625rem; /* 10px / 16px = 0.625rem */
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  transition-delay: 0.2s;
+  border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
+  cursor: pointer;
 }
 
 .login-form button:hover {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 .login-form p {
-    margin-top: 1rem;
-    text-align: center;
-    color: var(--white);
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--white);
 }
 
 a {
-    color: var(--white);
+  color: var(--white);
 }
 
 a:hover,

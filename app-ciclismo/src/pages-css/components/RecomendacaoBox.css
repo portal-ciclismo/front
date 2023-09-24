@@ -1,37 +1,33 @@
 .caixa {
   border: 1px solid #ccc;
-  padding: 2rem; 
+  padding: 2rem;
   background-color: var(--white);
   border-radius: 2px;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   width: 15rem;
   height: 25rem;
 
   display: flex;
   flex-direction: column;
- justify-content: space-around;
+  justify-content: space-around;
 }
 
-
 .aspas {
-  width: 2rem; 
+  width: 2rem;
   height: 2rem;
 }
 
 .caixa p {
   font-size: 1.6rem;
-  color: var(--blue); 
+  color: var(--blue);
   font-weight: 400;
   font-size: 1rem;
   padding: 0.5rem;
-  
-  
 }
 
-.perfil{
+.perfil {
   display: flex;
 }
-
 
 .perfil img {
   border-radius: 50%;
@@ -45,5 +41,4 @@
   padding: 1rem;
   padding-top: 2rem;
   font-size: 1rem;
-
 }
