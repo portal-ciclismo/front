@@ -356,8 +356,8 @@
 }
 
 /* section 4 */
-.image-container {
-  margin-right: -60%;
+.rotated-image {
+display: none;
 }
 
 /* section 5 */
@@ -430,8 +430,8 @@
 
 /* section 3*/
 /* section 4*/
-.image-container {
-  margin-right: -60%;
+.rotated-image {
+display: none;
 }
 /* section 5*/
 .section5 {
@@ -490,10 +490,9 @@
 }
 
 /* section 4 */
-.image-container {
-  margin-right: -60%;
+.rotated-image {
+display: none;
 }
-
 /* section 5 */
 .title-section5 {
   top: 2rem; /* Ajuste o valor conforme necessário */
@@ -646,9 +645,4 @@
 }
 }
 
-@media screen and (width: 820px) and (height: 1180px) {
-  /* Seu código CSS específico para essa tela aqui */
-  .image-container {
-    margin-right: -100%;
-  }
-}
+
