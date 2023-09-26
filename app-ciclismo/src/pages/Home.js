@@ -1,40 +1,52 @@
-import React from 'react';
-import '../pages-css/Home.css';
-import RecomendacaoBox from '../components/RecomendacaoBox';
-import CriarContaButton from '../components/CriarContaButton';
-import CategoriaBox from '../components/CategoriaBox';
+import React from "react";
+import "../pages-css/Home.css";
+import RecomendacaoBox from "../components/RecomendacaoBox";
+import CriarContaButton from "../components/CriarContaButton";
+import CategoriaBox from "../components/CategoriaBox";
 
-import Passeios from '../assets/background-imgs/medium-shot-family-cycling-outdoors.jpg';
-import Competicoes from '../assets/background-imgs/professional-cyclist-womeneee.jpg';
-import Masketplace from '../assets/background-imgs/close-up-young-businessman-bike-shop.jpg';
+import Passeios from "../assets/background-imgs/medium-shot-family-cycling-outdoors.jpg";
+import Competicoes from "../assets/background-imgs/professional-cyclist-womeneee.jpg";
+import Masketplace from "../assets/background-imgs/close-up-young-businessman-bike-shop.jpg";
 
-import Aspas from '../assets/Icons/aspas_icon.jpg';
-import Perfil1 from '../assets/perfil_imgs/Rodrigo_perfil.jpg'
-import Perfil2 from '../assets/perfil_imgs/Vinicius_perfil.jpg'
-import Perfil3 from '../assets/perfil_imgs/Gabriel_perfil.jpg'
-import Logo from '../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg'
-import EstrelaColor from '../assets/Estrelas/Estrela_grande_fullcolor.png';
-import LogoCamelo from '../assets/Camelo/camelo_branco.png'
-import CoupleBike from '../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg'
+import Aspas from "../assets/Icons/aspas_icon.jpg";
+import Perfil1 from "../assets/perfil_imgs/Rodrigo_perfil.jpg";
+import Perfil2 from "../assets/perfil_imgs/Vinicius_perfil.jpg";
+import Perfil3 from "../assets/perfil_imgs/Gabriel_perfil.jpg";
+import Logo from "../assets/Logo_Horizontal/logo_horizontal_fullcolor.svg";
+import EstrelaColor from "../assets/Estrelas/Estrela_grande_fullcolor.png";
+import LogoCamelo from "../assets/Camelo/camelo_branco.png";
+import CoupleBike from "../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg";
+import videoHome from '../assets/videos/Closeup_of_Bike_Chain_loop.mp4';
 
 const Home = () => {
   return (
     <div className="home-container">
       <section className="section1">
-        {/* Conteúdo da primeira seção */}
+        <div className='video'>
+          <video src={videoHome} autoPlay loop muted />
+        </div>
+        <div className="content">
+            <span>Vamos pedalar juntos? </span>
+            <div className="section1-button">
+            <button onClick={() => { /* Adicione o redirecionamento para a página de login aqui */ }}>
+              LOGIN
+            </button>
+            </div>
+        </div>
       </section>
-
       <section className="section2">
-        <div className='section2-img'><img src={EstrelaColor} /></div>
+        <div className="section2-img">
+          <img src={EstrelaColor} />
+        </div>
 
-        <div className='section2-container'>
-
-          <div className='section2-text'>
+        <div className="section2-container">
+          <div className="section2-text">
             <span>Pedalar sozinho nunca mais.</span>
-            <p><strong>Camelo</strong> é sua nova plataforma de ciclismo.
-              Aqui você encontra ciclistas entusiastas e
-              profissionais em uma comunidade confiável e
-              crescente.</p>
+            <p>
+              <strong>Camelo</strong> é sua nova plataforma de ciclismo. Aqui
+              você encontra ciclistas entusiastas e profissionais em uma
+              comunidade confiável e crescente.
+            </p>
           </div>
 
           <button>SAIBA MAIS.</button>
@@ -42,12 +54,12 @@ const Home = () => {
       </section>
       <section className="section3">
         {/* Conteúdo da terceira seção */}
-        <span className="title-section3">Tudo o que você <br />precisa em um só lugar.</span>
+        <span className="title-section3">
+          Tudo o que você <br />
+          precisa em um só lugar.
+        </span>
         <div className="container-categorias">
-          <CategoriaBox
-            textoCategoria="Passeios"
-            imagemCategoria={Passeios}
-          />
+          <CategoriaBox textoCategoria="Passeios" imagemCategoria={Passeios} />
           <CategoriaBox
             textoCategoria="Competições"
             imagemCategoria={Competicoes}
@@ -60,7 +72,6 @@ const Home = () => {
         <div className="section3-button">
           <CriarContaButton />
         </div>
-
       </section>
       <section className="section4">
         {/* Conteúdo da quarta seção */}
@@ -69,7 +80,7 @@ const Home = () => {
             <span>Descubra ou redescubra o prazer de pedalar.</span>
             <p>Cadastre-se agora mesmo! É Grátis!.</p>
             <div className="section4-button">
-                <CriarContaButton />
+              <CriarContaButton />
             </div>
           </div>
           <div className="image-container">
@@ -77,11 +88,9 @@ const Home = () => {
           </div>
         </div>
 
-
         <div class="split-right">
-          <img src={CoupleBike} alt={'Couple Bike'} />
+          <img src={CoupleBike} alt={"Couple Bike"} />
         </div>
-
       </section>
       <section className="section5">
         {/* Conteúdo da quinta seção */}
@@ -106,28 +115,43 @@ const Home = () => {
             nome="Gabriel, (Escrivão)"
           />
         </div>
-
       </section>
       <section className="section6">
-        <div className='section6-text1'>
-          <h1>Comunidade,<br />Esporte,<br /> Lazer.</h1>
+        <div className="section6-text1">
+          <h1>
+            Comunidade,
+            <br />
+            Esporte,
+            <br /> Lazer.
+          </h1>
         </div>
-        <div className='section6-text2'>
-          <h2>Tudo isso<br />e muito mais.</h2>
+        <div className="section6-text2">
+          <h2>
+            Tudo isso
+            <br />e muito mais.
+          </h2>
         </div>
-        <div className='section6-button'>
+        <div className="section6-button">
           <CriarContaButton />
         </div>
       </section>
       <footer>
-        <img src={Logo} alt='Logo camelo' className='footer-img' />
-        <div className='footer-text1'>
+        <img src={Logo} alt="Logo camelo" className="footer-img" />
+        <div className="footer-text1">
           <h1>FALE CONOSCO</h1>
         </div>
-        <div className='footer-text2'>
-          <h1>Instagram<br />Twitter<br />Facebook<br />LinkedIn</h1>
+        <div className="footer-text2">
+          <h1>
+            Instagram
+            <br />
+            Twitter
+            <br />
+            Facebook
+            <br />
+            LinkedIn
+          </h1>
         </div>
-        <div className='footer-text3'>
+        <div className="footer-text3">
           <h1>contato@camelo.com</h1>
         </div>
       </footer>
