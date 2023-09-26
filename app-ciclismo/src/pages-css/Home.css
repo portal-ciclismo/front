@@ -22,7 +22,49 @@
 
 /* Section 1 */
 .section1 {
-  background-color: #1e88e5;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Cor do texto */
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+}
+
+.content span {
+  font-size: 5rem;
+  font-family: Helvetica, sans-serif;
+}
+.section1-button{
+  text-align: center;
+  display: block;
+}
+
+.section1 button {
+  background-color: var(--orange);
+
+  margin-top: 3rem;
+  width: 12rem;
 }
 
 /* Section 2 */
