@@ -15,7 +15,7 @@
 .section5,
 .section6 {
   width: 100vw;
-  height: 10vh;
+  height: 100vh;
   min-height: 100vh;
   color: white;
 }
@@ -141,32 +141,44 @@
 }
 
 .container-categorias {
-  width: 100%;
-  height: 100%;
+  font-weight: 500;
+  padding-top: 4%;
+  padding-bottom: 4%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  row-gap: 1rem;
-  column-gap: 10rem;
 }
 
 .title-section3 {
+  position:relative;
+  object-fit: cover;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
   font-weight: 400;
+  white-space: wrap;
   font-size: 3.375rem;
-  line-height: 59px;
-  padding: 0.5rem;
+  padding: 0.25rem;
+  padding-top: 5%;
   line-height: 3.75rem;
-  letter-spacing: -0.03em;
-  white-space: nowrap;
+  letter-spacing: -0.02em;
+  white-space: wrap;
+  z-index: -1;
 }
 
 .section3-button button {
   background-color: var(--yellow);
+  font-family: Helvetica, sans-serif;
+  position: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration-line: none;
+  cursor: pointer;
+  width: 14rem;
+  height: max-content;
+  margin-bottom: 6%;
+  margin: 0 auto;
 }
 
 /* Section 4 */
