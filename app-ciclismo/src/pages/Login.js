@@ -28,7 +28,7 @@ function Login() {
 
   const sendLogin = (data) => {
     api
-      .post("/auth/login", data)
+      .post("/usuarios", data)
       .then(() => {
         setLoginStatus(true);
         // guardar o token em localStorage
