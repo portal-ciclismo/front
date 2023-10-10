@@ -17,6 +17,10 @@ import EstrelaColor from "../assets/Estrelas/Estrela_grande_fullcolor.png";
 import LogoCamelo from "../assets/Camelo/camelo_branco.png";
 import CoupleBike from "../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg";
 import videoHome from '../assets/videos/Closeup_of_Bike_Chain_loop.mp4';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
+
+
 
 const Home = () => {
   return (
@@ -25,12 +29,13 @@ const Home = () => {
         <div className='video'>
           <video src={videoHome} autoPlay loop muted />
         </div>
+        
         <div className="content">
             <span>Vamos pedalar juntos? </span>
             <div className="section1-button">
-            <button onClick={() => { /* Adicione o redirecionamento para a página de login aqui */ }}>
-              LOGIN
-            </button>
+            <Link to="/Login">
+        <button>LOGIN</button>
+      </Link>
             </div>
         </div>
       </section>
