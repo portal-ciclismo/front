@@ -1,0 +1,64 @@
+.menu-item {
+    background-color: #eb6841;
+    margin: 0;
+    height: 30px;
+    display: flex;
+ 
+  }
+
+  .menu-item input.search-bar {
+    border-radius: 8px;
+    border-style: none;
+    width: 300px;
+    height: 30px;
+    position:right; /* add daqui */
+    right:50px; /* margin da direita */
+    
+    transform:  translateY(40%);
+  }
+
+  .user-info {
+    background-color: #00a0b0; /* Alterar a cor de fundo para Item 2 */
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .user-info h2 {
+    font-size: 3rem; /* Tamanho de fonte para as informações do perfil */
+    color: white;
+    align-items:flex-end;
+  }
+  .user-info p {
+    font-size: 1.5rem; /* Tamanho de fonte para as informações do perfil */
+    color: white;
+  }
+
+  .menu-item button {
+    background-color: #eb6841;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .menu-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .menu-item li {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu-item li.active {
+    font-weight: bold;
+  }
