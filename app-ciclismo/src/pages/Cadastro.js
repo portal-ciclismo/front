@@ -29,7 +29,7 @@ function Cadastro() {
     validationSchema,
     onSubmit: (values) => {
       if (values.password === values.confirmPassword) {
-        api.post('/usuarios', values)
+        api.post('/auth/new-register', values)
           .then(() => {
             navigate('/home');
           })
