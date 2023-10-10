@@ -11,7 +11,7 @@ function Perfil() {
     <div className="Perfil">
       <TopBar />
       <div className="main-content">
-        <ProfileSidebar />
+        <ProfileSidebar className="profile-sidebar" />
         <GroupList />
       </div>
     </div>
