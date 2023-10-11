@@ -1,3 +1,8 @@
+.main-content-perfil{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
 .profile-sidebar {
     margin-left: 5rem;
     margin-top: 5rem;

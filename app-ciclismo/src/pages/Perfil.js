@@ -10,10 +10,10 @@ function Perfil() {
   return (
     <div className="Perfil">
       <TopBar />
-      <div className="main-content">
+      <main className="main-content-perfil">
         <ProfileSidebar className="profile-sidebar" />
         <GroupList />
-      </div>
+      </main>
     </div>
   );
 }
