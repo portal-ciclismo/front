@@ -1,5 +1,7 @@
 .grupo-feed {
-    border: 1px solid red;
+    display: flex;
+    padding: 1rem;
+    color: var(--brown);
 }
 
 .grupo-feed img {
@@ -8,3 +10,17 @@
     border-radius: 50%;
 }
 
+.grupo-feed p{
+    display: flex;
+    padding-left: 0.5rem;
+}
+
+.conteudo-grupo{
+    align-items: center;
+}
+.conteudo-grupo span{
+    padding-left: 0.5rem;
+    display: flex;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}

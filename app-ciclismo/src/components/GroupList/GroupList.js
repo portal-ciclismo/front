@@ -7,7 +7,7 @@ function GroupList() {
     <div className="group-list">
       {/* Lista de grupos */}
       <div className='coluna-esquerda-grupo'>
-      <h2>Grupos</h2>
+      <h1>Grupos</h1>
         <GroupFeed
           imagemGrupo={imgGrupo}
           nomeGrupo="Jambalaya"
@@ -22,7 +22,7 @@ function GroupList() {
         />
         <GroupFeed
           imagemGrupo={imgGrupo}
-          nomeGrupo="mountain bikers"
+          nomeGrupo="Mountain bikers"
           passeiosRecentes="7 passeios recentes"
           qtdParticipantes="4 participantes"
         />
@@ -30,7 +30,7 @@ function GroupList() {
     <div className='coluna-direita-grupo'>
         <GroupFeed
           imagemGrupo={imgGrupo}
-          nomeGrupo="Meninas super Poderosas"
+          nomeGrupo="Meninas Super Poderosas"
           passeiosRecentes="2 passeios recentes"
           qtdParticipantes="3 participantes"
         />
