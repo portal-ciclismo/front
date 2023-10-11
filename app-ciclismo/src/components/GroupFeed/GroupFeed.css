@@ -1,0 +1,10 @@
+.grupo-feed {
+    border: 1px solid red;
+}
+
+.grupo-feed img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
