@@ -4,11 +4,56 @@
     border-radius: 50%;
     border: 0.125rem solid #fff;
     object-fit: cover;
-}
-
-.profile-sidebar h1 {
+  }
+  
+  .profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-sidebar ul li {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .profile-sidebar ul li a {
+    font-size: 1.2rem;
     color: #00a0b0;
-    line-height: 3rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
+    text-decoration: none; /* Remova o sublinhado padrão dos links */
+    line-height: 2rem;
+  }
+  
+  .bike-section-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff0000; /* Defina a cor desejada para o texto "Bicicletas" (vermelho) */
+  }
+  
+  .bike-section-toggle:hover {
+    text-decoration: underline;
+  }
+  
+  .bike-section {
+    padding-left: 0.5rem;
+  }
+  
+  .bike-section ul {
+    padding-left: 1rem;
+  }
+  
+  .bike-section ul li {
+    line-height: 2rem;
+    margin-left: 0.5rem;
+  }
+  
+  .bike-section-toggle {
+    color: #00a0b0;
+    text-decoration: none;
+  }
+  
+  .bike-section a {
+    color: #00a0b0;
+    text-decoration: none;
+  }
+  
