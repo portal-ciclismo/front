@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import api from "../services/api";
+import token from "../services/token";
 
 import "../pages-css/Login.css";
 import logo_branca from "../assets/Logo_Horizontal/logo_horizontal_branco.png";
@@ -28,10 +29,10 @@ function Login() {
 
   const sendLogin = (data) => {
     api
-      .post("/usuarios", data)
+      .post("/auth/login", data)
       .then(() => {
         setLoginStatus(true);
-        // guardar o token em localStorage
+        /*salvarToken(passar o token da api como parâmetro);*/
       })
       .catch(() => {
         setLoginDenied(true);
