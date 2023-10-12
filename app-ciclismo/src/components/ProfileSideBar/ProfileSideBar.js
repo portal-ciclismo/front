@@ -34,10 +34,10 @@ function ProfileSidebar() {
           {bikeSectionOpen && (
             <ul className="bike-section">
               <li>
-                <a href="#">Cadastre Sua Bike</a>
+                <a href="http://localhost:4200/bike-register">Cadastre Sua Bike</a>
               </li>
               <li>
-                <a href="#">Visualize Sua Bike</a>
+                <a href="http://localhost:4200/bike-view">Visualize Sua Bike</a>
               </li>
             </ul>
           )}
