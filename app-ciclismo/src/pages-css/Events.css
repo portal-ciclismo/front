@@ -1,0 +1,33 @@
+/* No arquivo Events.css */
+.event-image {
+    max-width: 30rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+.main-content-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+}
+  
+.main-content-events ul {
+    list-style: none;
+    padding: 0;
+}
+  
+  .main-content-events li {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.Evento-titulo {
+    background-color: var(--yellow);
+    color: white;
+    padding: 0.625rem;
+    text-align: center; 
+    width: 100%;
+  }

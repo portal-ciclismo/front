@@ -2,7 +2,7 @@ import React from 'react';
 import './TopBar.css';
 import logo from '../../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../../assets/Estrelas/Estrela_grande_branca.png';
-
+import BarraDePesquisa from '../BarraDePesquisa';
 
 function TopBar() {
   const usuario = "Rodrigo Rebouças (Professor)";
@@ -10,14 +10,7 @@ function TopBar() {
 
   return (
     <div className="top-bar">
-      <div className="menu-item-container">
-        <img src={logo} alt="Logo1" />
-        <div className="search-container">
-          <input type="text" placeholder="  O que está procurando hoje?" />
-          <i className="search-icon"></i>
-        </div>
-        <button>Buscar</button>
-      </div>
+      <BarraDePesquisa />
 
       <div className="info-usuario">
         <div className="info-usuario-container">
