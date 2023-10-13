@@ -4,7 +4,7 @@ import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../assets/Estrelas/Estrela_grande_branca.png';
 
 
-import profileImage from "../assets/perfil_imgs/placeholderImage.png";
+import userImg from '../assets/perfil_imgs/Rodrigo_perfil.jpg';
 
 
 import imgGrupo from '../assets/perfil_imgs/Rodrigo_perfil.jpg'
@@ -72,7 +72,7 @@ function Grupo() {
 
       <div className="profile-container">
         <div className="profileImg">
-          <img src={profileImage} alt="Foto de perfil" />
+          <img src={userImg} alt="Foto de perfil" />
           <h2>{usuario}</h2>
          
         </div>
