@@ -1,0 +1,9 @@
+.container-bike-view{
+   display: flex;
+   flex-direction: column;
+   padding: 8rem;
+}
+.container-bike-view p {
+   font-size: 2rem;
+   padding: 1rem;
+}
