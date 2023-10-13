@@ -7,6 +7,7 @@ import Perfil from './pages/Perfil';
 import SMS from './pages/SMS';
 import BikeView from './pages/BikeViewPage';
 import BikeRegister from './pages/BikeCreatePage';
+import Events from './pages/Events';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/sms" element={<SMS />}></Route>
         <Route path="/bike-view" element={<BikeView />}></Route>
         <Route path="/bike-register" element={<BikeRegister />}></Route>
+        <Route path="/Events" element={<Events />}></Route>
 
       </Routes>
     </Router>
