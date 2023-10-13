@@ -9,6 +9,8 @@ import BikeView from './pages/BikeViewPage';
 import BikeRegister from './pages/BikeCreatePage';
 import Grupo from './pages/Grupo';
 import ConvidarAmigos from './pages/ConvidarAmigos';
+import Events from './pages/Events';
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/bike-register" element={<BikeRegister />}></Route>
         <Route path="/grupo" element={<Grupo />}></Route>
         <Route path="/convidaramigos" element={<ConvidarAmigos />}></Route>
+        <Route path="/Events" element={<Events />}></Route>
 
       </Routes>
     </Router>
