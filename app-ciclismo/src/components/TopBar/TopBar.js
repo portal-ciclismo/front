@@ -10,7 +10,7 @@ function TopBar() {
 
   return (
     <div className="top-bar">
-      <div className="menu-item-conteiner">
+      <div className="menu-item-container">
         <img src={logo} alt="Logo1" />
         <div className="search-container">
           <input type="text" placeholder="  O que está procurando hoje?" />
@@ -19,8 +19,8 @@ function TopBar() {
         <button>Buscar</button>
       </div>
 
-      <div className="user-info">
-        <div className="info-container">
+      <div className="info-usuario">
+        <div className="info-usuario-container">
           <img src={Estrela} alt="estrela_branca" />
           <h2>{usuario}</h2>
           <p>Amador: {nivelAmador}</p>
