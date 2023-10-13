@@ -32,22 +32,23 @@
   border: 2px solid #999; 
 }
 
-.info-usuario {
-  background-color: #00a0b0;
+.user-info {
+  background-color: #edc951;
   height: 13rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Helvetica, sans-serif;
   flex-direction: row;
+  position: relative;
 }
 
-.info-usuario h2 {
+.user-info h2 {
   font-size: 3rem;
   color: white;
 }
 
-.info-usuario p {
+.user-info p {
   font-size: 1.5rem;
   color: white;
   text-align: start;
@@ -70,7 +71,6 @@
   padding-top: 0.4rem;
 }
 
-
 .menu-item-container button:hover {
   background-color: #f2d933;
   transform: translateY(0);
@@ -86,18 +86,100 @@
   25%, 75% {
     opacity: 0;
   }
-}
-.menu-item-container img {
-  width: 15rem;
-  height: 3rem;
-  transform: scale(1.2) translateX(6rem);
-  transform-origin: left;
-  margin: -1.2rem;
+
 }
 
-.info-usuario img {
-  width: 10rem;
-  height: 9rem;
-  transform: scale(1.4) translateX(47.5rem);
-  margin: -6.9rem;
+.user-info img {
+width: 12rem;
+height: 10rem;
+transform: scale(1.2) translateX(-4rem);
+margin-left: -22rem;
+margin-top: 0rem;
+}
+
+.userImg-container img {
+width: 10rem;
+height: 10rem;
+border-radius: 50%;
+border: 0.125rem solid #fff;
+object-fit: cover;
+}
+
+.user-info h3 {
+color: #fff;
+position: absolute;
+left: 16rem; 
+}
+
+.user-info p {
+color: #fff;
+font-size: 1rem;
+position: absolute;
+left: 16rem;
+margin-top: 3rem;
+}
+
+.user-info {
+display: flex;
+align-items: center;
+}
+
+.info-container {
+display: flex;
+align-items: center;
+}
+
+.direita {
+position: absolute;
+right: -6rem;
+top: 2rem;
+
+
+}
+
+.userImg-container {
+width: 10rem;
+height: 10rem;
+
+}
+
+.esquerda {
+width: 10rem;
+height: 10rem;
+margin-left: auto;
+}
+
+.msg-button {
+text-align: center;
+margin-top: 1.25rem;
+background-color: #fff;
+padding: 3rem; 
+font-size: 1.3rem;
+font-family: Helvetica, sans-serif;
+
+.msg-button-container {
+margin: 5rem auto; 
+color: #6a4a3c; 
+}
+
+.btn-esquerda {
+background-color: #eb6841;
+color: #fff;
+padding: 0.75rem 1.5rem;
+font-size: 1.2rem; 
+font-family: Helvetica, sans-serif;
+margin-right: 1rem; 
+margin-left: 1rem; 
+}
+
+.btn-direita {
+background-color: #f2d933; 
+color: #fff; 
+padding: 0.75rem 1.5rem;
+font-size: 1.2rem;
+font-family: Helvetica, sans-serif;
+margin-right: 1rem; 
+margin-left: 1rem; 
+}
+
 }
