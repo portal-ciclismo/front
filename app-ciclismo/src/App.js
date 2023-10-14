@@ -28,7 +28,7 @@ function App() {
         <Route path="/grupo" element={<Grupo />}></Route>
         <Route path="/convidaramigos" element={<ConvidarAmigos />}></Route>
         <Route path="/Events" element={<Events />}></Route>
-        <Route path="/RegistroEvento" element={<RegistroEvento />}></Route>
+        <Route path="/RegistroEventos" element={<RegistroEvento />}></Route>
 
       </Routes>
     </Router>
