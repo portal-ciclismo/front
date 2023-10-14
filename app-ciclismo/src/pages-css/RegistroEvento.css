@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+.form-cadastro-evento button{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group{
+    margin: 0.3rem;
+
+}
+
+.form-group input{
+    padding-left: 1%;
+}
+
+.main-content-cadastro-evento{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.form-cadastro-evento form{
+    width: 100vw;
+}
+
+.form-cadastro-evento{
+    padding: 60px;
+    border-radius: 3rem;
+    border: 1px var(--orange) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-cadastro-evento button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+}
+input{
+    border-radius: 2rem;
+}
