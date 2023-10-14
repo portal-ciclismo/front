@@ -1,0 +1,140 @@
+/* Grupos de passeio em João Pessoa */
+
+
+.grupo-menu-container{
+    background-color: #eb6841;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin: 50px;
+    
+    
+  }   
+
+  form input{
+    outline: unset;
+    border-radius: 40px;
+    border: 2px solid orange;
+    padding: 20 px;
+    width: 300px;
+    height: 30px;
+    align-items: right;
+  }
+
+  form input[type=submit]{
+    background-color: #eb6841;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  form label {
+    margin-left: 10px;
+    color: black;
+
+  }
+  
+  
+  .grupo-menu-container input {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15rem;
+    margin-top: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-size: 20px 20px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .grupo-menu-container input:hover {
+    background-color: #e0e0e0;
+    border: 2px solid #999;
+  }
+  
+  
+  .grupo-menu-container button {
+    background-color: #edc951;
+    color: white;
+    border-radius: 2rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    width: 9rem;
+    transform: translateY(0.2rem);
+    display: inline-block;
+    transition: background-color 0.1s, transform 0.1s;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.4rem;
+  }
+  
+  
+  
+  
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  
+  .grupo-menu-container img {
+    width: 15rem;
+    height: 3rem;
+    transform: scale(1.2) translateX(6rem);
+    transform-origin: left;
+    margin: -1.2rem;
+  }
+  
+  .grupo-info {
+    background-color: #edc951;
+    display: flex;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    padding: 2rem 25rem;
+    position: relative;
+    width: 100%;
+
+    
+  }
+  
+  
+  .grupo-container {
+    display: flex;
+    justify-content: right;
+    position: fixed right;
+  }
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+ 
