@@ -223,7 +223,9 @@ function CadastroEvento() {
                             </div>
                         )}
                     </div>
-                    <button className='button-cadastro-evento' type="submit" onSubmit={formik.handleSubmit}>Cadastrar Evento</button>
+                    <div className='div-button-form'>
+                        <button className='button-cadastro-evento' type="submit" onSubmit={formik.handleSubmit}>CADASTRAR EVENTO</button>
+                    </div>
                 </form>
             </main>
 
