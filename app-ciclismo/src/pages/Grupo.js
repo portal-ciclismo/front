@@ -1,3 +1,6 @@
+/* Grupos de passeio em João Pessoa  Criado por Cinthia*/
+
+
 import React from 'react';
 import '../pages-css/Grupo.css';
 import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
@@ -8,9 +11,7 @@ import userImg from '../assets/perfil_imgs/Rodrigo_perfil.jpg';
 
 
 import imgGrupo from '../assets/perfil_imgs/Rodrigo_perfil.jpg'
-import GroupFeed from '../components/GroupFeed/GroupFeed';
-
-
+import GroupFeed from '../components/GroupFeed/GroupFeed'; 
 
 
 function Grupo() {
@@ -76,8 +77,6 @@ function Grupo() {
           <h2>{usuario}</h2>
          
         </div>
-
-
 
 
         <h1>
