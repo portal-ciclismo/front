@@ -8,18 +8,26 @@ html{
 }
 
 .form-cadastro-evento button{
-    width: 12rem;
+    background-color: var(--yellow);
+    width: 18vw;
+    font-weight: 600;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    max-width: max-content;
 }
 
 .form-group{
+    display: flex;
     margin: 0.3rem;
+    align-items: center;
+    justify-content:space-between;
 
 }
 
 .form-group input{
+    border-color: #fff;
     padding-left: 1%;
 }
 
@@ -29,6 +37,10 @@ html{
     padding-top: 2%;
 }
 
+.main-content-cadastro-evento span, h1, label{
+    color: #fff;
+    font-weight: 500;
+}
 .form-cadastro-evento form{
     width: 100vw;
 }
@@ -36,18 +48,17 @@ html{
 .form-cadastro-evento{
     padding: 60px;
     border-radius: 3rem;
-    border: 1px var(--orange) solid;
+    background-color: var(--orange);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.button-cadastro-evento button{
+.div-button-form{
+    padding-top: 1rem;
     display: flex;
-    align-content: center;
-    justify-content: center;
     align-items: center;
-    max-width: max-content;
+    justify-content: center;
 }
 input{
     border-radius: 2rem;
