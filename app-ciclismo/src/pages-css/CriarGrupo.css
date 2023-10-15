@@ -1,7 +1,7 @@
 /* Grupos de passeio em João Pessoa */
 
 
-.grupo-menu-container{
+.criar-grupo-menu-container{
     background-color: #eb6841;
     height: 5rem;
     display: flex;
@@ -41,7 +41,7 @@
   }
   
   
-  .grupo-menu-container input {
+  .criar-grupo-menu-container input {
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -64,13 +64,13 @@
   }
   
   
-  .grupo-menu-container input:hover {
+  .criar-grupo-menu-container input:hover {
     background-color: #e0e0e0;
     border: 2px solid #999;
   }
   
   
-  .grupo-menu-container button {
+  .criar-grupo-menu-container button {
     background-color: #edc951;
     color: white;
     border-radius: 2rem;
@@ -101,7 +101,7 @@
   }
   
   
-  .grupo-menu-container img {
+  .criar-grupo-menu-container img {
     width: 15rem;
     height: 3rem;
     transform: scale(1.2) translateX(6rem);
@@ -109,7 +109,7 @@
     margin: -1.2rem;
   }
   
-  .grupo-info {
+  .criar-grupo-info {
     background-color: #edc951;
     display: flex;
     align-items: center;
@@ -117,12 +117,24 @@
     padding: 2rem 25rem;
     position: relative;
     width: 100%;
+    height: 13rem;
 
     
   }
+
+  .criar-grupo-info img {
+    width: 10rem;
+    height: 9rem;
+    transform: scale(1.4) translateX(37.6rem);
+    margin: -6.9rem;
+  }
   
+  .criar-grupo-info h2{
+    font-size: 4rem;
+    color: white;
+  }
   
-  .grupo-container {
+  .criar-grupo-container {
     display: flex;
     justify-content: right;
     position: fixed right;
