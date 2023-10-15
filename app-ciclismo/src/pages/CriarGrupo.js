@@ -6,25 +6,25 @@ import Estrela from '../assets/Estrelas/Estrela_grande_branca.png';
 
 
 function CriarGrupo() {
-  const grupo = "Criar Grupo";
+  const criar = "Criar Grupo";
 
 
 return (
-  <div className="grupo-menu">
-    <div className="grupo-menu-container">
+  <div className="criar-grupo-menu">
+    <div className="criar-grupo-menu-container">
       <img src={logo} alt="Logo1" />
-      <div className="search-container">
+      <div className="criar-search-container">
         <input type="text" placeholder="  O que está procurando hoje?" />
-        <i className="search-icon"></i>
+        <i className="criar-search-icon"></i>
       </div>
       <button>Buscar</button>
     </div>
 
 
-    <div className="grupo-container">
-      <div className="grupo-info">
+    <div className="criar-grupo-container">
+      <div className="criar-grupo-info">
         <img src={Estrela} alt="estrela_branca" />
-        <h2>{grupo}</h2>
+        <h2>{criar}</h2>
 
       </div>
     </div >
