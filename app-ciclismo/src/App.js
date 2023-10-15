@@ -9,7 +9,6 @@ import BikeView from './pages/BikeViewPage';
 import BikeRegister from './pages/BikeCreatePage';
 import Grupo from './pages/Grupo';
 import ConvidarAmigos from './pages/ConvidarAmigos';
-import CriarGrupo from './pages/CriarGrupo';
 import Events from './pages/Events';
 import RegistroEvento from './pages/RegistroEvento';
 
