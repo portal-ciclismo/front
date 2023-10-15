@@ -1,8 +1,9 @@
 import React from 'react';
 import '../pages-css/ConvidarAmigos.css';
-import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../assets/Estrelas/Estrela_grande_branca.png';
 import userImg from '../assets/perfil_imgs/Rodrigo_perfil.jpg';
+import BarraDePesquisa from '../components/BarraDePesquisa';
+
 
 function ConvidarAmigos() {
   const convidar = "Convidar amigos";
@@ -11,13 +12,7 @@ function ConvidarAmigos() {
 
   return (
     <div className="convidar-amigos">
-      <div className="menu-item-container">
-        <img src={logo} alt="Logo1" />
-        <div className="search-container">
-          <input type="text" placeholder="  O que está procurando hoje?" />          
-        </div>
-        <button>Buscar</button>
-      </div>
+      <BarraDePesquisa />
 
       <div className="user-info">
         <div className="info-container">
@@ -36,6 +31,7 @@ function ConvidarAmigos() {
 
       <div className="msg-button">
         <div className="msg-button-container">
+         
           <p>Grupo "placeholder" criado com sucesso.</p>
         </div>
         <button className="convidar btn-esquerda">Convidar amigos</button>

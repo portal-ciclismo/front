@@ -1,6 +1,4 @@
 /* Grupos de passeio em João Pessoa  Criado por Cin*/
-
-
 .grupo-menu-container{
     background-color: #eb6841;
     height: 5rem;
@@ -53,10 +51,11 @@
     text-align: center;
     font-size: 1.5rem;
     padding-top: 0.4rem;
+  
   }
   
   
-  .grupo-menuu-container button:hover {
+  .grupo-menu-container button:hover {
     background-color: #f2d933;
     transform: translateY(0);
   }
@@ -83,49 +82,57 @@
     transform: scale(1.2) translateX(6rem);
     transform-origin: left;
     margin: -1.2rem;
-  }
-  
+    overflow: hidden;
+  } 
+
   .grupo-info {
     background-color: #edc951;
+    font-family: Helvetica, sans-serif;
     display: flex;
     align-items: center;
-    font-family: Helvetica, sans-serif;
-    padding: 5rem 19rem;
-    position: relative;
-}
+    height: 13rem;
+    width: 100rem;
+    padding: 1rem;
 
-  
+
+    margin: 0 auto;
+  }
+ 
   .grupo-container {
     display: flex;
     justify-content: right;
-    position: fixed right;
   }
-  
-  
-  .grupo-info h2{
+ 
+  .grupo-info h2 {
     font-size: 2.5rem;
     color: white;
+    margin-left: 0rem;
+    padding: 1rem;
   }
-  
-  
+ 
+ 
   .grupo-info img {
     width: 10rem;
     height: 9rem;
-    transform: scale(1.4) translateX(40rem);
+    transform: scale(1.4) translateX(48.1rem);
     margin: -6.9rem;
+    position: absolute;
+    padding: -4rem;
   }
-  
+
+    
   
   .profile-container {
     background-color: #00a0b0;
+    font-family: Helvetica, sans-serif;
     flex-direction: column;
     display: flex;
     width: 17.8rem;
-    height: 50rem;
-    font-family: Helvetica, sans-serif;
-    margin-top: -41.9rem;
+    height: 55rem;
+    margin-top: -42rem;
+    position: absolute;
+    
   }
-  
   
   .profileImg {
     display: flex;
