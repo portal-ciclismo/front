@@ -1,191 +1,105 @@
-/* Grupos de passeio em João Pessoa  Criado por Cin*/
-.grupo-menu-container{
-    background-color: #eb6841;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .grupo-menu-container input {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    background-color: #f4f4f4;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    width: 500px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 15rem;
-    margin-top: 1.2rem;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-size: 20px 20px;
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-  }
-  
-  
-  .grupo-menu-container input:hover {
-    background-color: #e0e0e0;
-    border: 2px solid #999;
-  }
-  
-  
-  .grupo-menu-container button {
-    background-color: #edc951;
-    color: white;
-    border-radius: 2rem;
-    height: 2.5rem;
-    position: absolute;
-    top: 1rem;
-    right: 5rem;
-    width: 9rem;
-    transform: translateY(0.2rem);
-    display: inline-block;
-    transition: background-color 0.1s, transform 0.1s;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 0.4rem;
-  
-  }
-  
-  
-  .grupo-menu-container button:hover {
-    background-color: #f2d933;
-    transform: translateY(0);
-  }
-  
-  
-  .grupo-menu-container button:active {
-    animation: blink 0.5s;
-  }
-  
-  
-  @keyframes blink {
-    0%, 50%, 100% {
-      opacity: 1;
-    }
-    25%, 75% {
-      opacity: 0;
-    }
-  }
-  
-  
-  .grupo-menu-container img {
-    width: 15rem;
-    height: 3rem;
-    transform: scale(1.2) translateX(6rem);
-    transform-origin: left;
-    margin: -1.2rem;
-    overflow: hidden;
-  } 
+/* Grupos de passeio em João Pessoa Criado por Cinthia*/
 
-  .grupo-info {
-    background-color: #edc951;
-    font-family: Helvetica, sans-serif;
+ 
+
+.grupo-info {
+  background-color: #edc951;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 13rem;
+  width: 100rem;
+  padding: 1rem;
+}
+
+.grupo-container {
     display: flex;
-    align-items: center;
-    height: 13rem;
-    width: 100rem;
-    padding: 1rem;
+    justify-content: flex-end;
+}
 
 
-    margin: 0 auto;
-  }
- 
-  .grupo-container {
-    display: flex;
-    justify-content: right;
-  }
- 
-  .grupo-info h2 {
-    font-size: 2.5rem;
-    color: white;
-    margin-left: 0rem;
-    padding: 1rem;
-  }
- 
- 
-  .grupo-info img {
-    width: 10rem;
-    height: 9rem;
-    transform: scale(1.4) translateX(48.1rem);
-    margin: -6.9rem;
-    position: absolute;
-    padding: -4rem;
-  }
+.grupo-info h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 20rem;
+  padding: 1rem;
+}
 
-    
+
+.grupo-info img {
+  width: 10rem;
+  height: 9rem;
+  transform: scale(1.4) translateX(65rem);
+  margin: -6.9rem;
+  position: absolute;
+  padding: -4rem;
+} 
+
+.profile-container {
+  background-color: #00a0b0;
+  font-family: Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+  width: 17.8rem;
+  height: 55rem;
+  margin-top: -42rem;
+  position: absolute;
   
-  .profile-container {
-    background-color: #00a0b0;
-    font-family: Helvetica, sans-serif;
-    flex-direction: column;
-    display: flex;
-    width: 17.8rem;
-    height: 55rem;
-    margin-top: -42rem;
-    position: absolute;
-    
-  }
-  
-  .profileImg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-  }
-  
-  
-  .profileImg img {
-    width: 10rem;
-    height: 10rem;
-    border: 0.125rem solid #fff;
-    object-fit: cover;
-  }
-  
-  
-  .profile-container h1 {
-    color: #fff;
-    line-height: 3rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-  }
-  
-  
-  .profile-container h1 ul {
-    color: #edc951;
-    margin-top: 0rem;
-    margin-left: 3rem;
-  }
-  
-  
-  .profile-container h2 {
-    font-size: 2.5rem;
-    color: white;
-    margin-top: 1rem;
-  }
-  
-  
-  .direita-grupo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-family: Helvetica, sans-serif;
-    height: 100%;
-    margin-top: 3rem;
-    padding-left: 24rem;
-  }
-  
-  
-  .nome-da-sua-div {
-    position: relative;
-  }
-  
+}
+
+.profileImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+
+.profileImg img {
+  width: 10rem;
+  height: 10rem;
+  border: 0.125rem solid #fff;
+  object-fit: cover;
+}
+
+
+.profile-container h1 {
+  color: #fff;
+  line-height: 3rem;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  font-weight: normal;
+}
+
+
+.profile-container a {
+  color: #edc951;
+  font-size: 1.5rem;  
+  margin-left: 3rem;
+}
+
+
+.profile-container h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 1rem;
+
+}
+
+
+.direita-grupo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+  margin-top: 3rem;
+  padding-left: 24rem;
+}
+
+
+.nome-da-sua-div {
+  position: relative;
+}

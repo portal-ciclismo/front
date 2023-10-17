@@ -1,75 +1,87 @@
-.menu-item-conteiner{
-    background-color: #eb6841;
-    height: 5rem;
-    display: flex;
-    align-items: center;
+/* .menu-container is the main container for the component */
+.menu-container {
+  display: flex;
+  align-items: center;
+  background-color: #eb6841;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+.menu-container input {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: rgba(244, 244, 244, 0.4);
+  border: 0.2rem solid #fff; 
+  border-radius: 2rem; 
+  width: 30rem; 
+  height: 2.5rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: 1.25rem; 
+  display: flex;
+  position: absolute;
+  top: 1.2rem;
+  right: 15rem;
+ 
+}
+
+.menu-container button {
+  background-color: #edc951;
+  border-radius: 2rem;
+  height: 2.5rem;
+  width: 9rem;
+  transform: translateY(0.2rem);
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0.4rem;
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+}
+
+.menu-container button:hover {
+  background-color: #f2d933;
+  transform: translateY(0);
+}
+
+.menu-container button:active {
+  animation: blink 0.5s;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
   }
-  
-  .menu-item-conteiner input {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    background-color: #f4f4f4;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    width: 500px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 15rem;
-    margin-top: 1.2rem;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-size: 20px 20px; 
-    background-position: 95% 50%; 
-    background-repeat: no-repeat;
+  25%, 75% {
+    opacity: 0;
   }
-  
-  .menu-item-conteiner input:hover {
-    background-color: #e0e0e0; 
-    border: 2px solid #999; 
-  }
-  
-  .menu-item-conteiner button {
-    background-color: #edc951;
-    color: white;
-    border-radius: 2rem;
-    height: 2.5rem;
-    position: absolute;
-    top: 1rem;
-    right: 5rem;
-    width: 9rem;
-    transform: translateY(0.2rem);
-    display: inline-block;
-    transition: background-color 0.1s, transform 0.1s;
-    text-align: center; /* Centraliza o texto */
-    font-size: 1.5rem;
-    padding-top: 0.4rem;
-  }
-  
-  
-  .menu-item-conteiner button:hover {
-    background-color: #f2d933;
-    transform: translateY(0);
-  }
-  
-  .menu-item-conteiner button:active {
-    animation: blink 0.5s;
-  }
-  @keyframes blink {
-    0%, 50%, 100% {
-      opacity: 1;
-    }
-    25%, 75% {
-      opacity: 0;
-    }
-  }
-  .menu-item-conteiner img {
-    width: 15rem;
-    height: 3rem;
-    transform: scale(1.2) translateX(6rem);
-    transform-origin: left;
-    margin: -1.2rem;
-  }  
+}
+
+.menu-container img {
+  width: 15rem;
+  height: 3rem;
+  transform: scale(1.2) translateX(6rem);
+  transform-origin: left;
+  margin: -1.2rem;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2rem;
+  width: 3.5rem;
+  position: absolute;
+  left: 1.5rem;
+}
+
+.menu-icon .bar {
+  height: 0.3rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  width: 3.6rem;
+}
+
