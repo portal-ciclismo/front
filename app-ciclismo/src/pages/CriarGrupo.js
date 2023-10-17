@@ -1,7 +1,8 @@
 import React from 'react';
 import '../pages-css/CriarGrupo.css';
-import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../assets/Estrelas/Estrela_grande_branca.png';
+import BarraDePesquisa from '../components/BarraDePesquisa';
+
 
 
 
@@ -11,15 +12,7 @@ function CriarGrupo() {
 
 return (
   <div className="criar-grupo-menu">
-    <div className="criar-grupo-menu-container">
-      <img src={logo} alt="Logo1" />
-      <div className="criar-search-container">
-        <input type="text" placeholder="  O que está procurando hoje?" />
-        <i className="criar-search-icon"></i>
-      </div>
-      <button>Buscar</button>
-    </div>
-
+    <BarraDePesquisa />
 
     <div className="criar-grupo-container">
       <div className="criar-grupo-info">
