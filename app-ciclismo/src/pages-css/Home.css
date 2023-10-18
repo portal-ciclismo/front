@@ -324,6 +324,7 @@ footer {
   min-height: 30vh;
   background-color: #fff;
   color: black;
+  
 }
 
 .footer-img {
@@ -334,7 +335,8 @@ footer {
   margin-left: 8rem;
 }
 
-.footer-text1 {
+.footer-text1 h1 {
+  color: black;
   position: absolute;
   margin-top: 2rem;
   margin-left: 50%;
@@ -347,6 +349,7 @@ footer {
   margin-left: 50%;
   font-size: 0.8rem;
   font-family: Helvetica, sans-serif;
+  color: black;
 }
 
 .footer-text3 {
@@ -354,16 +357,19 @@ footer {
   margin-top: 12rem;
   margin-left: 50%;
   font-family: Helvetica, sans-serif;
+  color: black;
 }
 
 .footer-text2 h1 {
   font-weight: normal;
   font-family: Helvetica, sans-serif;
+  color: black;
 }
 
 .footer-text3 h1 {
   font-weight: normal;
   font-family: Helvetica, sans-serif;
+  color: black;
 }
 
 /* Extra small devices (phones, 600px and down) */
