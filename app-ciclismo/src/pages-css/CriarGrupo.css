@@ -1,82 +1,83 @@
-.criar-grupo-menu-container{
-  background-color: #eb6841;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-}
-
 .form-div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
-  margin: 50px;
-  
-  
-}   
-
-form input{
-  outline: unset;
-  border-radius: 40px;
-  border: 2px solid orange;
-  padding: 20 px;
-  width: 300px;
-  height: 30px;
-  align-items: right;
+  margin-left: 15rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-family: Helvetica, sans-serif;
+  line-height:1.2;
 }
 
-form input[type=submit]{
+.form-div input {
+  border: 0.2rem solid #eb6841;
+  width: 30rem;
+  height: 2.6rem;
+  margin-top: 1rem;
+  padding: 1.2rem; 
+}
+
+.button-criar-grupo button{
   background-color: #eb6841;
-  color: white;
-  cursor: pointer;
-  width: 100px;
-}
-
-form label {
-  margin-left: 10px;
-  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: left;
+  justify-content: center;
+  max-width: max-content;
 
 }
 
+.button-form{
+  padding-top: 1.5rem;
+  display: flex;
+  margin-left: 32.5rem;
+}
+
+.form-div label {
+  color: #6a4a3c;
+ 
+}
+
+.radio-options input {
+  height: 1.4rem;
+  display: flex;
+  margin-left: -2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
 
 
+.form-div form br {
+  display: flex;
+}
 
 .criar-grupo-info {
   background-color: #edc951;
   display: flex;
   align-items: center;
   font-family: Helvetica, sans-serif;
-  padding: 2rem 25rem;
+  padding: 2rem 0;
   position: relative;
   width: 100%;
   height: 13rem;
-
-  
+  text-align: center;
 }
 
 .criar-grupo-info img {
   width: 10rem;
   height: 9rem;
-  transform: scale(1.4) translateX(37.6rem);
-  margin: -6.9rem;
+  transform: scale(1.4) translateX(65.4rem);
+  margin: -7rem;
 }
 
-.criar-grupo-info h2{
-  font-size: 4rem;
+.criar-grupo-info h2 {
+  font-size: 3rem;
   color: white;
+  margin: 35rem;
 }
 
 .criar-grupo-container {
   display: flex;
-  justify-content: right;
-  position: fixed right;
+  justify-content: center;
+  position: relative;
 }
-
-
-
-
-
-
-
-
-
-

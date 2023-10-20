@@ -10,6 +10,15 @@ function Grupo() {
   const grupo = "Grupos de Passeio em João Pessoa";
   const usuario= "Rodrigo";
 
+  fetch('/api/grupos') 
+  .then(response => response.json())
+  .then(data => {
+    // Use os dados recebidos do servidor no seu componente
+  })
+  .catch(error => {
+    // Trate erros, como exibir uma mensagem de erro para o usuário
+  });
+
   return (
     <div className="grupo-menu">
       <BarraDePesquisa />
@@ -77,6 +86,5 @@ function Grupo() {
     </div>
   );
 }
-
 
 export default Grupo;
