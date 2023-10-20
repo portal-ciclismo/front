@@ -93,7 +93,7 @@ return (
 
     </div>
    
-    <div className='form-div'  >
+    <div className="form-div"  >
         <label>Descrição</label>
         <input type="text" placeholder="  "
         id="description"
@@ -103,7 +103,7 @@ return (
         onBlur={formik.handleBlur}/>
     </div>
 
-    <div className='form-div'  >
+    <div className="form-div"  >
         <label>Localidade do Grupo</label>
         <input type="text" placeholder="  "
         id="location"
@@ -113,11 +113,11 @@ return (
         onBlur={formik.handleBlur}
         required/>
     </div>
-
-    <div>
-        <input type='submit' value='Salvar'/>
+  
+    <div className="button-form">
+        <button className="button-criar-grupo" type="submit" onSubmit={formik.handleSubmit}>Salvar</button>
     </div>
-    
+      
     </form>
    
   </div>

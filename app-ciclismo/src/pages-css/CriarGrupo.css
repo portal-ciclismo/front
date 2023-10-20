@@ -5,10 +5,10 @@
   margin-top: 3rem;
   font-size: 1.8rem;
   font-family: Helvetica, sans-serif;
-  
+  line-height:1.2;
 }
 
-form input {
+.form-div input {
   border: 0.2rem solid #eb6841;
   width: 30rem;
   height: 2.6rem;
@@ -16,22 +16,25 @@ form input {
   padding: 1.2rem; 
 }
 
-form input[type=submit] {
+.button-criar-grupo button{
   background-color: #eb6841;
-  color: #fff;
-  cursor: pointer;
-  width: 13rem;
-  font-size: 1.8rem;
   display: flex;
-  margin-left: 32rem;
-  padding-top: 0.4rem;
-  display: inline-block;
-  position: absolute;
-  outline: none;
+  flex-wrap: nowrap;
+  align-items: left;
+  justify-content: center;
+  max-width: max-content;
+
 }
 
-label {
+.button-form{
+  padding-top: 1.5rem;
+  display: flex;
+  margin-left: 32.5rem;
+}
+
+.form-div label {
   color: #6a4a3c;
+ 
 }
 
 .radio-options input {
@@ -43,7 +46,8 @@ label {
   position: absolute;
 }
 
-form br {
+
+.form-div form br {
   display: flex;
 }
 
