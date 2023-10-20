@@ -1,51 +1,51 @@
 .form-div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
-  margin-left: 10rem; 
+  margin-left: 15rem;
   margin-top: 3rem;
   font-size: 1.8rem;
-  z-index: 2;
+  font-family: Helvetica, sans-serif;
+  
 }
 
 form input {
-  outline: none; 
   border: 0.2rem solid #eb6841;
   width: 30rem;
-  height: 2.5rem;
+  height: 2.6rem;
+  margin-top: 1rem;
+  padding: 1.2rem; 
 }
 
 form input[type=submit] {
   background-color: #eb6841;
   color: #fff;
   cursor: pointer;
-  width: 10rem;
+  width: 13rem;
   font-size: 1.8rem;
   display: flex;
-  margin-left: 30rem;
+  margin-left: 32rem;
   padding-top: 0.4rem;
   display: inline-block;
   position: absolute;
   outline: none;
 }
 
-
-form label {
+label {
   color: #6a4a3c;
-  padding-top: 0.1rem;
-  
 }
 
 .radio-options input {
-  height: 1.5rem;
+  height: 1.4rem;
   display: flex;
-  margin-left: 5rem;
+  margin-left: -2rem;
   display: flex;
   flex-direction: column;
   position: absolute;
-  
 }
 
+form br {
+  display: flex;
+}
 
 .criar-grupo-info {
   background-color: #edc951;
@@ -75,5 +75,5 @@ form label {
 .criar-grupo-container {
   display: flex;
   justify-content: center;
-  position: relative; 
+  position: relative;
 }

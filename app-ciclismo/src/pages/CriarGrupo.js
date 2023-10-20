@@ -85,6 +85,8 @@ return (
           checked={formik.values.privacy === 'true'}
           onChange={formik.handleChange}
         />
+        <br/>
+        
         <label htmlFor="private">Privado</label>
       </div>
 
