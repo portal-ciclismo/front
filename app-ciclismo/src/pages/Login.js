@@ -5,7 +5,6 @@ import api from "../services/api";
 import token from "../services/token";
 
 import "../pages-css/Login.css";
-import logo_branca from "../assets/Logo_Horizontal/logo_horizontal_branco.png";
 
 function Login() {
   const [loginStatus, setLoginStatus] = useState(false);
@@ -22,19 +21,16 @@ function Login() {
     setLoginState({ ...loginState, [key]: e.target.value });
   };
 
-  const handleLoginForm = (e) => {
-    e.preventDefault();
-    console.log(loginState);
-  };
-
   const sendLogin = (data) => {
     api
-      .post("/auth/login", data)
-      .then(() => {
+      .post("/usuarios", data)
+      .then((response) => {
+        const authToken = response.data.token;
+        token.salvarToken(authToken);
         setLoginStatus(true);
-        /*salvarToken(passar o token da api como parâmetro);*/
+        navigate('/perfil');
       })
-      .catch(() => {
+      .catch((error) => {
         setLoginDenied(true);
       });
   };
@@ -65,10 +61,10 @@ function Login() {
           Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
         </p>
 
-        { loginStatus && navigate('/home') /*criar página inicial do usuário logado!*/ }
-        {
-          //loginDenied && criar componente da mensagem de erro no login!
-        }
+        {loginStatus && navigate('/perfil')}
+        {loginDenied && (
+          <p>Erro ao fazer login.</p>
+        )}
       </form>
     </div>
   );

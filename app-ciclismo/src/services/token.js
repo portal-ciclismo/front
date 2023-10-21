@@ -20,7 +20,7 @@ const token = () => {
       }
     
       try {
-        const resposta = await fetch('http://localhost:8080/auth/login', {
+        const resposta = await fetch('http://localhost:8080/usuarios', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
