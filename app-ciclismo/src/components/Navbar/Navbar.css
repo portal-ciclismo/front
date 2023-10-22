@@ -1,0 +1,22 @@
+.navbar {
+  width: 0; 
+  height: 110%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-top: 0rem;
+  padding-block: 1.5rem;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.navbar.open {
+  width: 23%; 
+  background-color: #eb6841;
+  transition: width 0.3s ease-in-out;
+  box-shadow: 0 0 1% #000;
+  display: flex;
+  flex-direction: column;
+}
