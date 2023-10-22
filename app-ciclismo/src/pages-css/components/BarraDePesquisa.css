@@ -3,7 +3,8 @@
   align-items: center;
   background-color: #eb6841;
   height: 5rem;
-  padding: 0 1rem;
+  padding: 0 0rem;
+  z-index: -1;
 }
 
 .menu-container input {
@@ -59,11 +60,12 @@
 }
 
 .menu-container img {
-  width: 15rem;
-  height: 3rem;
+  width: 13rem;
+  height: 2.5rem;
   transform: scale(1.2) translateX(6rem);
   transform-origin: left;
   margin: -1.2rem;
+  z-index: 1;
 }
 
 .menu-icon {
