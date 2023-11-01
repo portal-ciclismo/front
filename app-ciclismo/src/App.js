@@ -12,6 +12,7 @@ import ConvidarAmigos from './pages/ConvidarAmigos';
 import Events from './pages/Events';
 import RegistroEvento from './pages/RegistroEvento';
 import CriarGrupo from './pages/CriarGrupo';
+import CadastroPerfil from './pages/CadastroPerfil';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
         <Route path="/Events" element={<Events />}></Route>
         <Route path="/RegistroEvento" element={<RegistroEvento />}></Route>
         <Route path="/criargrupo" element={<CriarGrupo />}></Route>
+        <Route path="/cadastroperfil" element={<CadastroPerfil />}></Route>
+        
 
       </Routes>
     </Router>

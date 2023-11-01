@@ -37,7 +37,7 @@ html{
     padding-top: 2%;
 }
 
-.main-content-cadastro-evento span, h1, label{
+.main-content-cadastro-evento span,.main-content-cadastro-evento h1, .main-content-cadastro-evento label{
     color: #fff;
     font-weight: 500;
 }
