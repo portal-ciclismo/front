@@ -90,7 +90,6 @@ return (
         <label htmlFor="private">Privado</label>
       </div>
 
-
     </div>
    
     <div className="form-div"  >
