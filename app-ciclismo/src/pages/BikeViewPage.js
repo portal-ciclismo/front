@@ -12,11 +12,11 @@ function BikeViewPage({ location }) {
       <main className="main-content-perfil">
         <ProfileSidebar />
         <div className='container-bike-view'>
-      <h1>Informações da Bicicleta</h1>
-       <p>Marca do Quadro: {/*{bikeData.frameBrand}*/}</p> 
-      <p>Tamanho da Roda: {/*{bikeData.wheelSize}*/}</p>
-      <p>Material do Quadro: {/*{bikeData.frameMaterial}*/}</p>
-      </div>
+          <h1>Informações da Bicicleta</h1>
+          <p>Marca do Quadro: {/*{bikeData.frameBrand}*/}</p> 
+          <p>Tamanho da Roda: {/*{bikeData.wheelSize}*/}</p>
+          <p>Material do Quadro: {/*{bikeData.frameMaterial}*/}</p>
+        </div>
       </main>
     </div>
   );

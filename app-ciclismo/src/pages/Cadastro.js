@@ -31,7 +31,7 @@ function Cadastro() {
       if (values.password === values.confirmPassword) {
         api.post('/usuarios', values)
           .then(() => {
-            navigate('/home');
+            navigate('/cadastro-perfil'); // Redirecionar para a tela de cadastro de perfil
           })
           .catch((error) => {
             console.error('Erro ao cadastrar usuário:', error);
