@@ -11,7 +11,7 @@ function CadastroPerfil() {
     location: '',
   });
 
-  const [usuario, setUsuario] = useState('');
+  const [nomeCompleto, setNomeCompleto] = useState('');
   const [nivelAmador, setNivelAmador] = useState('');
 
   const handleChange = (e) => {
