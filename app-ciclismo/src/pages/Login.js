@@ -28,7 +28,7 @@ function Login() {
         const authToken = response.data.token;
         token.salvarToken(authToken);
         setLoginStatus(true);
-        navigate('/perfil');
+        navigate('/cadatroperfil');
       })
       .catch((error) => {
         setLoginDenied(true);
@@ -61,7 +61,7 @@ function Login() {
           Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
         </p>
 
-        {loginStatus && navigate('/perfil')}
+        {loginStatus && navigate('/cadatroperfil')}
         {loginDenied && (
           <p>Erro ao fazer login.</p>
         )}
