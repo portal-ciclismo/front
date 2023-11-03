@@ -4,7 +4,7 @@ import logo from '../../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../../assets/Estrelas/Estrela_grande_branca.png';
 import BarraDePesquisa from '../BarraDePesquisa';
 
-function TopBar({ usuario, nivelAmador }) {
+function TopBar({ nomeCompleto, nivelAmador }) {
   return (
     <div className="top-bar">
       <BarraDePesquisa />
