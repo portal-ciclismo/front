@@ -21,7 +21,6 @@ function CadastroPerfil() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Faça o envio dos dados do perfil para o servidor aqui
   };
 
   return (

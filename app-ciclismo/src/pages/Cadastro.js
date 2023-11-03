@@ -31,10 +31,10 @@ function Cadastro() {
       if (values.password === values.confirmPassword) {
         api.post('/usuarios', values)
           .then(() => {
-            navigate('/cadastro-perfil'); // Redirecionar para a tela de cadastro de perfil
+            navigate('/home');
           })
           .catch((error) => {
-            console.error('Erro ao cadastrar usuário:', error);
+            navigate('/cadastro')
           });
       } else {
         setPasswordValidation(true);
@@ -47,7 +47,6 @@ function Cadastro() {
       <form className='cadastro-form' onSubmit={formik.handleSubmit}>
         <h1>Fazer cadastro</h1>
         <div className="form-group">
-          <label htmlFor="email">E-mail</label>
           <input
             type="email"
             id="email"
@@ -66,7 +65,6 @@ function Cadastro() {
           )}
         </div>
         <div className="form-group">
-          <label htmlFor="password">Senha</label>
           <input
             type="password"
             id="password"
@@ -85,7 +83,6 @@ function Cadastro() {
           )}
         </div>
         <div className="form-group">
-          <label htmlFor="confirmPassword">Confirmar Senha</label>
           <input
             type="password"
             id="confirmPassword"
