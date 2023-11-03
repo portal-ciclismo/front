@@ -11,6 +11,9 @@ function CadastroPerfil() {
     location: '',
   });
 
+  const [usuario, setUsuario] = useState('');
+  const [nivelAmador, setNivelAmador] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProfileData({
@@ -22,6 +25,9 @@ function CadastroPerfil() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Faça o envio dos dados do perfil para o servidor aqui
+  
+    setUsuario(profileData.fullName);
+    setNivelAmador(profileData.cyclingCategory);
   };
 
   return (
