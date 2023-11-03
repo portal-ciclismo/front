@@ -12,7 +12,7 @@ function TopBar({ nomeCompleto, nivelAmador }) {
       <div className="info-usuario">
         <div className="info-usuario-container">
           <img src={Estrela} alt="estrela_branca" />
-          <h2>{usuario}</h2>
+          <h2>{nomeCompleto}</h2>
           <p>Amador: {nivelAmador}</p>
         </div>
       </div>
