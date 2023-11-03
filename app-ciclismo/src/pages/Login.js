@@ -28,7 +28,7 @@ function Login() {
         const authToken = response.data.token;
         token.salvarToken(authToken);
         setLoginStatus(true);
-        navigate('/perfil');
+        navigate('/l');
       })
       .catch((error) => {
         setLoginDenied(true);
