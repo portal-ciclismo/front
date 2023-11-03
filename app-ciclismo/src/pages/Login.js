@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import api from "../services/api";
-import token from "../services/token";
 
 import "../pages-css/Login.css";
 
@@ -26,9 +25,9 @@ function Login() {
       .post("/usuarios", data)
       .then((response) => {
         const authToken = response.data.token;
-        token.salvarToken(authToken);
+        localStorage.setItem('token', authToken);
         setLoginStatus(true);
-        navigate('/cadatroperfil');
+        navigate('/cadastroperfil');
       })
       .catch((error) => {
         setLoginDenied(true);
