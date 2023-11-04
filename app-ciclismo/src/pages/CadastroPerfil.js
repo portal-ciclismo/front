@@ -9,14 +9,29 @@ function CadastroPerfil() {
     sexo: '',
     cyclingCategory: '',
     location: '',
+    profilePicture: null,
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setProfileData({
-      ...profileData,
-      [name]: value,
-    });
+    const { name, value, type, files } = e.target;
+    if (type === 'file') {
+      const selectedFile = files[0];
+      if (selectedFile) {
+        if (['image/jpeg', 'image/jpg', 'image/png', 'image/gif'].includes(selectedFile.type)) {
+          setProfileData({
+            ...profileData,
+            [name]: selectedFile,
+          });
+        } else {
+          alert('Por favor, selecione um arquivo de imagem válido.');
+        }
+      }
+    } else {
+      setProfileData({
+        ...profileData,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = (e) => {
@@ -24,16 +39,15 @@ function CadastroPerfil() {
   };
 
   return (
-    <div className="cadastro-perfil"> 
-    
-    <BarraDePesquisa />
+    <div className="cadastro-perfil">
+      <BarraDePesquisa />
 
       <div className="form-container">
-        
         <form onSubmit={handleSubmit}>
           <div className="form-cadastro-perfil">
-            
-            <label className="form-label" htmlFor="fullName">Nome Completo</label>
+            <label className="form-label" htmlFor="fullName">
+              Nome Completo
+            </label>
             <input
               type="text"
               name="fullName"
@@ -43,7 +57,9 @@ function CadastroPerfil() {
             />
           </div>
           <div className="form-cadastro-perfil">
-            <label className="form-label" htmlFor="nickname">Apelido</label>
+            <label className="form-label" htmlFor="nickname">
+              Apelido
+            </label>
             <input
               type="text"
               name="nickname"
@@ -53,7 +69,9 @@ function CadastroPerfil() {
             />
           </div>
           <div className="form-cadastro-perfil">
-            <label className="form-label" htmlFor="sexo">Sexo</label>
+            <label className="form-label" htmlFor="sexo">
+              Sexo
+            </label>
             <input
               type="text"
               name="sexo"
@@ -63,7 +81,9 @@ function CadastroPerfil() {
             />
           </div>
           <div className="form-cadastro-perfil">
-            <label className="form-label" htmlFor="cyclingCategory">Categoria de Ciclismo</label>
+            <label className="form-label" htmlFor="cyclingCategory">
+              Categoria de Ciclismo
+            </label>
             <select
               name="cyclingCategory"
               value={profileData.cyclingCategory}
@@ -75,7 +95,9 @@ function CadastroPerfil() {
             </select>
           </div>
           <div className="form-cadastro-perfil">
-            <label className="form-label" htmlFor="location">Localização</label>
+            <label className="form-label" htmlFor="location">
+              Localização
+            </label>
             <input
               type="text"
               name="location"
@@ -84,7 +106,21 @@ function CadastroPerfil() {
               className="form-input"
             />
           </div>
-          <button type="submit" className="form-button">Salvar Perfil</button>
+          <div className="form-cadastro-perfil">
+            <label className="form-label" htmlFor="profilePicture">
+              Foto de Perfil
+            </label>
+            <input
+              type="file"
+              name="profilePicture"
+              accept="image/jpeg, image/jpg, image/png, image/gif"
+              onChange={handleChange}
+              className="form-input"
+            />
+          </div>
+          <button type="submit" className="form-button">
+            Salvar Perfil
+          </button>
         </form>
       </div>
     </div>
