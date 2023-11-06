@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Routes>
 
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/cadastro" element={<Cadastro />}></Route>
         <Route path="/perfil" element={<Perfil />}></Route>
@@ -29,8 +29,8 @@ function App() {
         <Route path="/bike-register" element={<BikeRegister />}></Route>
         <Route path="/grupo" element={<Grupo />}></Route>
         <Route path="/convidaramigos" element={<ConvidarAmigos />}></Route>
-        <Route path="/Events" element={<Events />}></Route>
-        <Route path="/RegistroEvento" element={<RegistroEvento />}></Route>
+        <Route path="/eventos" element={<Events />}></Route>
+        <Route path="/registroEvento" element={<RegistroEvento />}></Route>
         <Route path="/criargrupo" element={<CriarGrupo />}></Route>
         <Route path="/cadastroperfil" element={<CadastroPerfil />}></Route>
         
