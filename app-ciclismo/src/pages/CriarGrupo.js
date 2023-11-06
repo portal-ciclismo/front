@@ -76,6 +76,7 @@ return (
           checked={formik.values.privacy === 'false'}
           onChange={formik.handleChange}
         />
+        <p></p>
       
         <label htmlFor="public">Público</label>
         <input

@@ -10,14 +10,14 @@
 .menu-container input {
   font-size: 1.3rem;
   font-weight: bold;
-  background-color: rgba(244, 244, 244, 0.4);
+  background-color: rgba(245, 245, 245, 0.4);
   border: 0.2rem solid #fff; 
-  border-radius: 2rem; 
+  border-radius: 1rem; 
   width: 30rem; 
   height: 2.5rem;
   outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  cursor: text;
+  transition: all 0.2s ease;
   background-size: 1.25rem; 
   display: flex;
   position: absolute;
@@ -62,7 +62,7 @@
 .menu-container img {
   width: 13rem;
   height: 2.5rem;
-  transform: scale(1.2) translateX(6rem);
+  transform: scale(1.0) translateX(7rem);
   transform-origin: left;
   margin: -1.2rem;
   z-index: 1;
