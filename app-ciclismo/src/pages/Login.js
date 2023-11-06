@@ -22,17 +22,24 @@ function Login() {
 
   const sendLogin = (data) => {
     api
-      .post("/usuarios", data)
+      .get(`/usuarios/user/${data.email}`)
       .then((response) => {
-        const authToken = response.data.token;
-        localStorage.setItem('token', authToken);
-        setLoginStatus(true);
-        navigate('/cadastroperfil');
+        const user = response.data;
+        if (user && user.password === data.password) {
+          const authToken = response.data.token;
+          localStorage.setItem("token", authToken);
+          setLoginStatus(true);
+          navigate("/cadastroperfil");
+        } else {
+          setLoginDenied(true);
+        }
       })
       .catch((error) => {
         setLoginDenied(true);
       });
   };
+  
+  
 
   return (
     <div className="container-login">
@@ -60,7 +67,7 @@ function Login() {
           Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
         </p>
 
-        {loginStatus && navigate('/cadatroperfil')}
+        {loginStatus && navigate('/cadastroperfil')}
         {loginDenied && (
           <p>Erro ao fazer login.</p>
         )}
