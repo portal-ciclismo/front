@@ -4,7 +4,6 @@ import BikeForm from '../components/BikeForm/BikeForm';
 
 import '../pages-css/BikeCreatePage.css';
 import TopBar from '../components/TopBar/TopBar';
-import ProfileSidebar from '../components/ProfileSideBar/ProfileSideBar';
 
 function BikeCreatePage() {
   //const history = useHistory();
@@ -25,7 +24,6 @@ function BikeCreatePage() {
     <div>
       <TopBar />
       <main className="main-content-perfil">
-      <ProfileSidebar />
       <div className='container-bike-form'>
       <h1>Cadastro de Bicicleta</h1>
       <BikeForm onSubmit={handleBikeSubmit} />
