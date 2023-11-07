@@ -19,6 +19,9 @@ function ProfileSidebar() {
           <a href="http://localhost:4200/perfil">Perfil</a>
         </li>
         <li>
+          <a href="http://localhost:4200/cadastroperfil">Cadastrar Perfil</a>
+        </li>
+        <li>
           <a href="http://localhost:4200/grupo">Grupos</a>
         </li>
         <li>
