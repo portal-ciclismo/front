@@ -18,7 +18,6 @@ import LogoCamelo from "../assets/Camelo/camelo_branco.png";
 import CoupleBike from "../assets/background-imgs/happy-young-couple-bike-ride-countryside.jpg";
 import videoHome from '../assets/videos/Closeup_of_Bike_Chain_loop.mp4';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import logo from '../assets/Logo_Horizontal/logo_horizontal_branco.png';
 
 
 

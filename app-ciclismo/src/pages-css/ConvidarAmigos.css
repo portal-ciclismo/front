@@ -22,11 +22,12 @@
 }
 
 .user-info img {
-width: 13rem;
-height: 11rem;
-transform: scale(1.2) translateX(-4rem);
+width: 11rem;
+height: 10rem;
+transform: scale(1.35) translateX(-4rem);
 margin-left: -30rem;
 margin-top: 0rem;
+display: flex;
 }
 
 .userImg-container img {
@@ -88,6 +89,7 @@ background-color: #fff;
 padding: 3rem; 
 font-size: 1.3rem;
 font-family: Helvetica, sans-serif;
+}
 
 .msg-button-container {
 margin: 5rem auto; 
@@ -114,4 +116,3 @@ margin-right: 1rem;
 margin-left: 1rem; 
 }
 
-}

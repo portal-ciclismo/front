@@ -1,13 +1,13 @@
 @media (max-width: 768px) {
     .text-categoria-box {
-        font-size: 2rem; /* Tamanho do texto para telas menores */
+        font-size: 2rem;
     }
   }
   
   @media (max-width: 480px) {
     .text-categoria-box {
         max-width: 18rem;
-        font-size: 1rem; /* Tamanho do texto para telas ainda menores */
+        font-size: 1rem; 
     }
   }
 
@@ -43,9 +43,7 @@
 
 .bannerCategoria, .bannerCategoria img{
     width: 100%;
-    /* Usar largura de 100% para redimensionar imagens automaticamente */
     max-width: 18rem;
-    /* Adicionar largura máxima para evitar que as imagens fiquem muito grandes */
     height: 14rem;
     border-radius: 1%;
     margin: 10px;

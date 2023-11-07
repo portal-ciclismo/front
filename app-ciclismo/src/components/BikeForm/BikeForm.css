@@ -1,12 +1,11 @@
-/* BikeForm.css */
 .form-container {
-    background: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    margin: 0 auto;
-  }
+  background: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+}
   
   .form-label {
     display: block;

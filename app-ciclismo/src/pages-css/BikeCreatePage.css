@@ -1,9 +1,14 @@
-.container-bike-view{
+.container-bike-view {
    display: flex;
    flex-direction: column;
-   padding: 8rem;
+   justify-content: center;
+   align-items: left;
+   min-height: 80vh;
+   padding: 0 30rem;
 }
+
 .container-bike-view p {
    font-size: 2rem;
    padding: 1rem;
+
 }
