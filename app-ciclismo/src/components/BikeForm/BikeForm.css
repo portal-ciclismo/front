@@ -4,35 +4,39 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 400px;
-  margin: 0 auto;
+  margin: 0 35rem;
+  margin-top: 5vh;  
+  text-align: center; 
 }
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: black;
+  text-align: left; 
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid var(--orange);
+  border-radius: 3px;
   
-  .form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color:black;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid var(--orange);
-    border-radius: 3px;
-  }
-  
-  .form-button {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 10rem;
-  }
-  
-  .form-button:hover {
-    background: #0056b3;
-  }
-  
+}
+
+.form-button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 10rem;
+  display: inline-block;
+}
+
+.form-button:hover {
+  background: #0056b3;
+}
