@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './TopBar.css';
-import logo from '../../assets/Logo_Horizontal/logo_horizontal_branco.png';
 import Estrela from '../../assets/Estrelas/Estrela_grande_branca.png';
 import BarraDePesquisa from '../BarraDePesquisa';
+// import api from './api'; 
+
 
 function TopBar() {
-  const usuario = "Rodrigo Rebouças (Professor)";
-  const nivelAmador = "Nível 2";
+  const [nomeCompleto, setNomeCompleto] = useState('');
+
+//  useEffect(() => {
+//   api.get("/cadastroperfil")
+//    .then(response => {
+//     const userData = response.data;
+//     setNomeCompleto(userData.nomeCompleto);
+//    })
+//    .catch(error => {
+//       console.error("Erro ao buscar os dados do usuário: ", error);
+//    });
+//  },[]);
 
   return (
     <div className="top-bar">
@@ -15,8 +26,7 @@ function TopBar() {
       <div className="info-usuario">
         <div className="info-usuario-container">
           <img src={Estrela} alt="estrela_branca" />
-          <h2>{usuario}</h2>
-          <p>Amador: {nivelAmador}</p>
+          <h2>{nomeCompleto}</h2>
   
         </div>
       </div>

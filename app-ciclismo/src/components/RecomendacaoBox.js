@@ -1,4 +1,3 @@
-// components/RecomendacaoBox.js
 import React from 'react';
 import '../pages-css/components/RecomendacaoBox.css';
 

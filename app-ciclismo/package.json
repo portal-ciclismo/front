@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yan": "^0.0.1",
+    "yarn": "^1.22.19",
     "yup": "^1.2.0"
   },
   "scripts": {

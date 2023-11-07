@@ -1,4 +1,3 @@
-// components/CategoriaBox.js
 import React from 'react';
 import '../pages-css/components/CategoriaBox.css';
 

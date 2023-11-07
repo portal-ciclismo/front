@@ -16,7 +16,25 @@ function ProfileSidebar() {
       </div>
       <ul>
         <li>
-          <a href="#">Grupos</a>
+          <a href="http://localhost:4200/perfil">Perfil</a>
+        </li>
+        <li>
+          <a href="http://localhost:4200/grupo">Grupos</a>
+        </li>
+        <li>
+          <div className="bike-section-toggle" onClick={toggleBikeSection}>
+            Social {bikeSectionOpen ? '-' : '+'}
+          </div>
+          {bikeSectionOpen && (
+            <ul className="bike-section">
+              <li>
+                <a href="http://localhost:4200/criargrupo">Criar Grupo</a>
+              </li>
+              <li>
+                <a href="http://localhost:4200/convidaramigos">Convidar Amigos</a>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <a href="#">Passeios</a>

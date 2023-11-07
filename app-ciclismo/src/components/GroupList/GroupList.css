@@ -1,15 +1,18 @@
-.group-list{
+.group-list {
     width: 100%;
     display: flex;
     flex-direction: row;
     color: var(--brown);
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
     font-family: Helvetica, sans-serif;
+    margin-top: 5rem;
+
 }
 
-.group-list h1{
+.group-list h1 {
     font-weight: bold;
+    margin: 0 1rem; 
 }

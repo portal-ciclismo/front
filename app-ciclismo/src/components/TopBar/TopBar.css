@@ -6,22 +6,13 @@
   justify-content: center;
   font-family: Helvetica, sans-serif;
   flex-direction: row;
-}
-
-.info-usuario h2 {
-  font-size: 3rem;
-  color: white;
-}
-
-.info-usuario p {
-  font-size: 1.5rem;
-  color: white;
-  text-align: start;
+  z-index: -3;
 }
 
 .info-usuario img {
-  width: 10rem;
-  height: 9rem;
-  transform: scale(1.4) translateX(47.5rem);
-  margin: -6.9rem;
+  max-width: 11rem;
+  height: 9.4rem;
+  transform: scale(1.4) translateX(30.3rem);
+  margin: -4.2rem;
+  display: flex;
 }
