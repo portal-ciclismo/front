@@ -1,77 +1,60 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 import api from "../services/api";
-
 import "../pages-css/Login.css";
 
 function Login() {
-  const [loginStatus, setLoginStatus] = useState(false);
-  const [loginDenied, setLoginDenied] = useState(false);
-
   const navigate = useNavigate();
+  const [loginDenied, setLoginDenied] = useState(false); // Adicione esta linha
 
-  const [loginState, setLoginState] = useState({
-    email: "",
-    password: "",
+  const loginSchema = Yup.object().shape({
+    email: Yup.string().email("Email inválido").required("Campo obrigatório"),
+    password: Yup.string().required("Campo obrigatório"),
   });
 
-  const handleOnChangeLogin = (e, key) => {
-    setLoginState({ ...loginState, [key]: e.target.value });
-  };
-
-  const sendLogin = (data) => {
+  const handleLogin = (values) => {
     api
-      .get(`/usuarios/user/${data.email}`)
+      .get(`/usuarios/user/${values.email}`)
       .then((response) => {
         const user = response.data;
-        if (user && user.password === data.password) {
+        if (user && user.password === values.password) {
           const authToken = response.data.token;
           localStorage.setItem("token", authToken);
-          setLoginStatus(true);
           navigate("/cadastroperfil");
         } else {
-          setLoginDenied(true);
+          setLoginDenied(true); 
         }
       })
       .catch((error) => {
-        setLoginDenied(true);
+        setLoginDenied(true); 
       });
   };
-  
-  
 
   return (
     <div className="container-login">
-      <form className="login-form" onSubmit={sendLogin}>
-        <h1>Fazer Login</h1>
-
-        <input
-          type="email"
-          placeholder="E-mail"
-          required
-          value={loginState.email}
-          onChange={(e) => handleOnChangeLogin(e, "email")}
-        />
-
-        <input
-          type="password"
-          placeholder="Senha"
-          required
-          value={loginState.password}
-          onChange={(e) => handleOnChangeLogin(e, "password")}
-        />
-        <button type="submit">Login</button>
-
-        <p>
-          Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
-        </p>
-
-        {loginStatus && navigate('/cadastroperfil')}
-        {loginDenied && (
-          <p>Erro ao fazer login.</p>
-        )}
-      </form>
+      <Formik
+        initialValues={{
+          email: "",
+          password: "",
+        }}
+        validationSchema={loginSchema}
+        onSubmit={handleLogin}
+      >
+        <Form className="login-form">
+          <h1>Fazer Login</h1>
+          <Field type="email" name="email" placeholder="E-mail" required />
+          <ErrorMessage name="email" component="div" className="error" />
+          <Field type="password" name="password" placeholder="Senha" required />
+          <ErrorMessage name="password" component="div" className="error" />
+          <button type="submit">Login</button>
+        </Form>
+      </Formik>
+      <p>
+        Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
+      </p>
+      {loginDenied && <p>Erro ao fazer login.</p>}
     </div>
   );
 }
